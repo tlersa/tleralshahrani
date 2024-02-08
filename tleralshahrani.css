@@ -327,6 +327,65 @@ span {
 
     .footer-left h1 { font-size: 20px } }
 
+@media screen and (min-width: 413px) {
+    .home-data, .about-me-data, .services-data, .works-data, .contact-data, .achievements-data { padding: 20px }
+
+    footer { padding: 10px }
+
+    .home-title {
+        font-size: 25px;
+        margin-top: 55px }
+
+    .quote { font-size: 18px }
+
+    .programming-logo { 
+        max-width: 180px;
+        margin-top: 0; left: -80px }
+
+    .about-me-title1, .services-title, .works-title, .contact-title, .achievements-title { font-size: 25px }
+
+    .about-me-title1::after {
+        margin-top: 20px;
+        height: 15px; width: 11% }
+
+    .about-me-card h2 span::after { height: 5px; width: 0 }
+
+    .my-logo-footer img { max-width: 50px }
+
+    .about-me-cards { padding: 0 }
+
+    .about-me-card { padding-top: 25px } 
+
+    .services { height: 60vh }
+
+    .services-title::after {
+        margin-top: 20px;
+        height: 15px; width: 20% }
+
+    .services-note { font-size: 16px }
+
+    .services-cards { padding-top: 25px }
+
+    .works-title::after, .achievements-title::after, .contact-title::after {
+        margin-top: 20px;
+        height: 15px; width: 18% }
+        
+    .works { height: 50vh }
+
+    .slider-wrapper { margin-top: 20px }
+
+    .slider img {
+        max-width: max-content;
+        object-fit: contain }
+
+    .achievements { height: 35vh }
+
+    .achievements-card { margin-top: 25px }
+
+    .achievements-card-content p { font-size: 20px }
+
+    .footer-left h1 { font-size: 20px } }
+
 @media screen and (min-width: 767px) {
     .home-data, .about-me-data, .services-data, .works-data, .contact-data, .achievements-data { padding: 40px }
 
