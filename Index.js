@@ -6,7 +6,7 @@ const sr = ScrollReveal ({
     delay: 400, })
 
 sr.reveal(`.nav-menu, .nav-toggle, .my-logo, .about-me-title1, .services-title, .services-note, .works-title, .products-title, .achievements-title, .contact-title, .contact-url, .contact-message-title, .my-logo-footer`)
-sr.reveal(`.about-me-title2, .about-me-text, .programming-logo-shadow, .about-me-cards, .services-cards, .slider-wrapper, .achievements-data, .message-form, .contact-note, .products-container1`, {origin: 'bottom'})
+sr.reveal(`.about-me-title2, .about-me-text, .programming-logo-shadow, .about-me-cards, .services-cards, .projects, .products-container1, .achievements-data, .message-form, .contact-note`, {origin: 'bottom'})
 sr.reveal(`.programming-logo, .footer-left`, {origin: 'left'})
 sr.reveal(`.quote, .home-text, .home-title, .copy-right, .footer-url`, {origin: 'right'})
 
@@ -35,18 +35,13 @@ document.querySelector('.nav-toggle').addEventListener('click', function() { doc
 document.querySelector('.nav-close').addEventListener('click', function() { document.body.style.overflow = 'auto' })
 document.querySelectorAll('.nav-item').forEach(function(navItem) { navItem.addEventListener('click', function() { document.body.style.overflow = 'auto' }) })
 
-// عرض وإخفاء المشاريع
-var projectview = document.querySelectorAll(".project-view")
-var slide_a = document.querySelectorAll(".slide a")
-var projectviewclose = document.querySelectorAll(".project-view-close")
+// عرض وإخفاء تفاصيل المشاريع
+function showProject(id) { document.getElementById(id).style.display = 'block'; }
+function closeProject(id) { document.getElementById(id).style.display = 'none'; }
 
-slide_a.forEach(function(button, index) {
-    button.onclick = function() {
-        projectview[index].style.display = "block" } })
-
-projectviewclose.forEach(function(i, index) {
-    i.onclick = function() {
-        projectview[index].style.display = "none" } })
+// منع المستخدم من التمرير بالموقع عند النقر على المشروع والسماح له عند عدم النقر
+document.querySelectorAll('.project').forEach(function(project) { project.addEventListener('click', function() { document.body.style.overflow = 'hidden' }); });
+document.querySelectorAll('.close-project').forEach(function(closeProject) { closeProject.addEventListener('click', function() { document.body.style.overflow = 'auto' }); });
 
 // عرض وإخفاء تفاصيل المنتجات
 let preveiwContainer = document.querySelector('.products-preview')
