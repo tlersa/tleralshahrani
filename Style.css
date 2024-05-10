@@ -162,10 +162,6 @@ span { color: #6E82FE }
 @media screen and (max-width: 321px) {
     .about-me-cards, .services-cards { margin-right: -10px} 
 
-    .slide-caption h1 { font-size: 16px }
-
-    .project-view-close i { font-size: 25px }
-
     .achievements { height: 50vh } }
 
 @media screen and (max-width: 376px) {
@@ -241,16 +237,6 @@ span { color: #6E82FE }
     .works-title::after, .achievements-title::after, .contact-title::after {
         margin-top: 20px;
         height: 15px; width: 22% }
-    
-    .slider-wrapper { margin-top: 20px }
-
-    .slider img {
-        max-width: max-content;
-        object-fit: contain }
-
-    .slide-caption h2 { font-size: 17.5px }
-
-    .project-view-close i { font-size: 30px }
 
     .products-title::after {
         margin-top: 20px;
@@ -313,7 +299,146 @@ span { color: #6E82FE }
         margin-top: 15px;
         height: 5px; width: 60% } }
 
-@media screen and (min-width: 413px) {
+@media screen and (max-width: 394px) {
+    .home-data, .about-me-data, .services-data, .works-data, .products-data, .achievements-data, .contact-data { padding: 20px }
+
+    footer { padding: 10px }
+
+    .my-logo {
+        margin-top: -20px;
+        max-width: 80px }
+
+    .home-title {
+        font-size: 25px; 
+        margin-top: 55px }
+
+    .about-me-title1, .services-title, .works-title, .products-title, .contact-title, .achievements-title { font-size: 25px }
+
+    .about-me-title1::after {
+        margin-top: 20px;
+        height: 15px; width: 13% }
+
+    .home-text {
+        display: block;
+        font-size: 20px;
+        margin-top: 190px }
+
+    .quote { 
+        font-size: 18px;
+        margin-top: 25px }
+
+    .programming-logo {
+        max-width: 180px; 
+        margin-top: 0; left: -80px }
+    
+    .programming-logo-shadow { margin-top: 195px; margin-left: -195px }
+
+    .about-me-title2 { font-size: 19px } 
+    
+    .about-me-text { 
+        font-size: 16px;
+        line-height: 26px }
+
+    .about-me-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        column-gap: 30px;
+        row-gap: 25px;
+        padding: 40px 0 60px }
+
+    .about-me-card h2 span { font-size: 20px }
+
+    .about-me-card h2 span::after { height: 5px; width: 0 }
+
+    .services-title::after {
+        margin-top: 20px;
+        height: 15px; width: 26% }
+
+    .services-note { font-size: 16px }
+
+    .services-cards {
+        padding-top: 25px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) }
+
+    .services-card-content { padding: 5px }
+
+    .services-card-content h2 { font-size: 20px }
+
+    .services-card-content pre { 
+        font-size: 13.5px;
+        line-height: 25px }
+    
+    .works-title::after, .achievements-title::after, .contact-title::after {
+        margin-top: 20px;
+        height: 15px; width: 22% }
+
+    .project-content { 
+        width: 260px; max-height: 420px;
+        overflow-y: auto }
+
+    .products-title::after {
+        margin-top: 20px;
+        height: 15px; width: 26% }
+
+    .product img { height: 170px }
+
+    .products-container1 { padding: 30px 32px }
+
+    .product-title { font-size: 17px }
+
+    .product-price { font-size: 15px }
+
+    .product-post {
+        margin-top: -585px; margin-right: -20px;
+        font-size: 10px }
+
+    .product-stars {
+        font-size: 10px;
+        margin-top: -602px; margin-left: -20px;
+        padding-top: 18px }
+
+    .preview { 
+        width: 240px; max-height: 440px;
+        overflow-y: auto }
+
+    .buy-btn { margin-left: 20px }
+
+    .preview img { height: 168px }
+
+    .products-preview-close { font-size: 35px }
+
+    .achievements { height: 35vh; width: 100% }
+
+    .achievements-card { margin-top: 25px }
+
+    .achievements-card-content p { font-size: 16.8px }
+
+    .contact-message-title { font-size: 14px }
+
+    .my-logo-footer img { max-width: 40px }
+
+    .my-logo-footer h2, .footer-left h1 { font-size: 20px }
+
+    .footer-links a { 
+        font-size: 30px;
+        padding: 3px }
+
+    .footer-links a img { width: 35px }
+
+    .footer-links .Threads img { width: 30px }
+
+    .footer-left, .copy-right { padding-top: 20px }
+
+    .footer-left a { 
+        font-size: 15px;
+        line-height: 25px }
+   
+    .footer-left a::before {
+        margin-top: 15px;
+        height: 5px; width: 60% } }
+
+@media screen and (min-width: 411px) {
     .home-data, .about-me-data, .services-data, .works-data, .contact-data, .achievements-data { padding: 20px }
 
     footer { padding: 10px }
@@ -358,15 +483,11 @@ span { color: #6E82FE }
         margin-top: 20px;
         height: 15px; width: 18% }
         
-    .works { height: 50vh }
+    .works { height: 155vh }
 
-    .slider-wrapper { margin-top: 20px }
-
-    .slider img {
-        max-width: max-content;
-        object-fit: contain }
-
-    .project-view-close i { font-size: 35px }
+    .project-content {
+        width: 320px; max-height: 420px;
+        overflow-y: auto }
 
     .products { height: 65vh }
 
@@ -440,6 +561,12 @@ span { color: #6E82FE }
 
     .works-title::after, .products-title::after, .achievements-title::after, .contact-title::after { width: 14.5% }
 
+    .projects { grid-template-columns: auto auto }
+
+    .project, .project3 { margin: 5px }
+
+    .project-content { width: 500px; max-height: 350px }
+
     .products { height: 75vh }
 
     .product img { height: 210px }
@@ -497,13 +624,17 @@ span { color: #6E82FE }
 
     .services-card-content { padding: 10px }
 
-    .works { height: 90vh }
+    .works { height: 110vh }
 
     .works-title::after, .products-title::after, .achievements-title::after, .contact-title::after { width: 10.5% }
 
-    .slider-container { margin-right: 85px }
+    .projects { padding: 10px }
 
-    .slider-wrapper { max-width: 760px }
+    .project, .project3 { margin: 8px }
+
+    .project-content {
+        width: 700px; max-height: 400px;
+        overflow-y: auto }
 
     .product-title { font-size: 28px }
 
@@ -512,7 +643,7 @@ span { color: #6E82FE }
     footer { padding: 20px 220px } }
 
 @media screen and (min-width: 1439px) {
-    .home-data, .about-me-data, .services-data, .works-data, .products-data, .achievements-data, .contact-data { padding: 40px 80px }
+    .home-data, .about-me-data, .services-data, .products-data, .achievements-data, .contact-data { padding: 40px 80px }
 
     footer { padding: 40px 0 }
 
@@ -583,25 +714,11 @@ span { color: #6E82FE }
     
     .works-title::after, .products-title::after, .achievements-title::after, .contact-title::after {
         margin-top: 40px;
-        height: 18px; width: 8% } 
-    
-    .slider-container { 
-        padding: 48px;
-        margin-right: 0 }
+        height: 18px; width: 8% }
 
-    .slider-wrapper { 
-        max-width: 960px;
-        margin: 0 auto }
+    .projects { grid-template-columns: auto auto auto }
 
-    .slider img {
-        max-width: 960px;
-        object-fit: cover }
-
-    .slide-caption h1, .slide-caption a { font-size: 25px }
-
-    .slide-caption h2 { font-size: 35px }
-
-    .project-view-close i { font-size: 40px }
+    .project-content { width: 700px }
 
     .preview img { height: 250px }
 
@@ -779,107 +896,125 @@ span { color: #6E82FE }
 .works-data {
     display: block;
     text-align: right }
-    
-.slider-wrapper { position: relative }
-    
-.slider {
-    display: flex;
-    aspect-ratio: 16/9;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    box-shadow: 0 24px 48px 12px hsla(38, 69%, 8%, .2);
-    border-radius: 8px;
-    -ms-overflow-style: none; /* IEو Edge لمتصفحي */
-    scrollbar-width: none /* Firefox لمتصفح */ }
-    
-.slider::-webkit-scrollbar { display: none } /* Chrome ،Safari ،Opera لمتصفح */
-    
-.slider img {
-    flex: 1 0 100%;
-    scroll-snap-align: start;
-    filter: contrast(0.5) }
 
-.slide {
-    display: flex;
-    position: relative }
-    
-.slide-caption {
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #FFF;
-    text-shadow: 0 0 5px #000 }
-    
-.slide-caption h1 {
-    font-weight: 600;
-    margin-bottom: 5px }
-    
-.slide-caption h2 { 
-    font-weight: 400;
-    margin-bottom: 5px }
+.projects {
+    display: grid;
+    margin-top: 20px }
 
-.slide-caption a { 
-    text-decoration: none;
-    cursor: pointer }
+.project, .project3 { cursor: pointer }
 
-.slide-caption p:hover, .slide-caption i:hover {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1) }
+.project3 { cursor: auto }
 
-.slide-caption p, .slide-caption i {
-    color: #FFF;
-    transition: transform 0.5s;
-    -webkit-transition: transform 0.5s;
-    -moz-transition: transform 0.5s;
-    -ms-transition: transform 0.5s;
-    -o-transition: transform 0.5s }
+.project img, .project3 img {
+    height: 100%; width: 100%;
+    object-fit: contain;
+    border-radius: 10px }
 
-.slider-nav {
-    display: flex;
-    column-gap: 16px;
-    position: absolute;
-    bottom: 20px; left: 50%;
-    transform: translateX(-50%);
-    z-index: 1 }
-    
-.slider-nav a {
-    height: 8px; width: 8px;
-    border-radius: 50%;
-    background-color: #FFF;
-    opacity: 0.75;
-    transition: opacity ease 250ms }
-
-.slider-nav a:hover { opacity: 1 }
-
-.project-view {
+.show-project {
     display: none;
     position: fixed;
-    z-index: 1;
+    width: 100%; height: 100%;
     top: 0; left: 0;
-    height: 100%; width: 100%;
-    overflow: auto }
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari لمتصفح */
+    z-index: 1 }
 
-.project-view-close {
-    z-index: 1;
-    background: none;
-    border: none;
-    cursor: pointer }
+.project-content {
+    margin: 100px auto;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px }
 
-.project-view-close:active { transform: scale(0.85) }
+.project-content h1 { font-weight: 600 }
 
-.project-view-close i {
+.project-content p {
+    font-size: 17px;
+    font-weight: 400 }
+
+.project-content p img { width: 20px }
+
+.project-content a {
+    color: #1569c7;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none }
+
+.font, .colors { display: flex }
+
+.abjadhuz {
+    font-size: 17px;
+    opacity: 0.5;
+    text-shadow: 0 0 5px #000;
+    margin-top: -2px }
+
+.p2colors { 
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px }
+
+.p2colors p {
+    font-size: 17px;
+    width: max-content;
+    padding: 2px;
+    border-radius: 10px;
+    margin-top: 7px;
+    margin-right: 10px }
+
+.p2c1 { 
+    color: #000;
+    background-color: #FAFBFB;
+    box-shadow: 0px 0px 5px #000 }
+
+.p2c2 { 
     color: #FFF;
-    font-weight: 600;
-    padding-top: 10px; padding-right: 18px }
+    background-color: #121212 }
 
-.project-view-slider img {
-    width: 100%;
-    margin-top: -7px }
+.p2c3 { 
+    color: #FFF;
+    background-color: #999 }
+
+.p2c4 { 
+    color: #FFF;
+    background-color: #787878 }
+
+.p2c5 { 
+    color: #FFF;
+    background-color: #2E635C }
+
+.p2c6 { 
+    color: #FFF;
+    background-color: #963c00 }
+
+.p2c7 { 
+    color: #FFF;
+    background-color: #1f8fff }
+
+.p2c8 { 
+    color: #FFF;
+    background-color: #f6a355 }
+
+.p2c9 { 
+    color: #FFF;
+    background-color: #46c389 }
+
+.p2c10 { 
+    color: #FFF;
+    background-color: #FF0000 }
+
+.p2c11 { 
+    color: #FFF;
+    background-color: #000 }
+
+.close-project {
+    font-size: 30px;
+    cursor: pointer;
+    float: left }
+
+#project1 .close-project { margin-top: -5px }
+
+#project2 .close-project { margin-top: -25px }
+
+.close-project:active { transform: scale(0.90) }
 
 .products { 
     width: 100%;
@@ -921,7 +1056,7 @@ span { color: #6E82FE }
 .product-title {
     padding: 2px 0;
     font-weight: 600;
-    color : #FFF }
+    color: #FFF }
      
 .product-price {
     margin-top: 10px;
