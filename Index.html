@@ -171,73 +171,53 @@
     <section class="works" id="works">
         <div class="works-data">
             <h1 class="works-title">أعمالي</h1>
-
-            <div class="slider-container">
-                <div class="slider-wrapper">
-                    <div class="slider">
-                        <div class="slide" id="slide-1">
-                            <img src="Albazar alraqamiu alshaamil banner.png" alt="مشروع موقع البازار الرقمي الشامل" width="960">
-                            <div class="slide-caption">
-                                <h1><span>موقع</span> البازار الرقمي الشامل</h1>
-                                <h2>متجر إلكتروني إماراتي</h2>
-                                <a><p>عرض المشروع <i class="fa-solid fa-arrow-up-right-from-square"></i></p></a>
-                            </div>                            
-                        </div>
-
-                        <div class="slide" id="slide-2">
-                            <img src="GYAITR logo.png" alt="GYAITR مشروع" width="960">
-                            <div class="slide-caption">
-                                <h1><span>نظام</span> GYAITR</h1>
-                                <h2>نظام ذكاء اصطناعي للتعامل مع الصور والفيديوهات</h2>
-                                <a href="https://github.com/tlersa/GYAITR" target="_blank" title="https://github.com/tlersa/GYAITR"><p>عرض المشروع <i class="fa-solid fa-arrow-up-right-from-square"></i></p></a>
-                            </div>
-                        </div>
-
-                        <div class="slide" id="slide-3">
-                            <img src="My Personal Website.png" alt="موقعي الشخصي" width="960">
-                            <div class="slide-caption">
-                                <h1><span>موقعي</span> الشخصي</h1>
-                                <h2>الموقع الذي تتصفحه أنت الآن 🫵🏽</h2>
-                            </div>
-                        </div> 
-                    </div>
-
-                    <div class="slider-nav">
-                        <a href="#slide-1"></a>
-                        <a href="#slide-2"></a>
-                        <a href="#slide-3"></a>
-                    </div>
-
-                    <div class="project-view">
-                        <div class="project-view-content">
-                            <button class="project-view-close"><i class="fa-solid fa-xmark"></i></button>
-                            
-                            <div class="project-view-slider">
-                                <img src="P1VS1.png" alt="صورة من المشروع">
-                                <img src="P1VS2.png" alt="صورة من المشروع">
-                                <img src="P1VS3.png" alt="صورة من المشروع">
-                                <img src="P1VS4.png" alt="صورة من المشروع">
-                                <img src="P1VS5.png" alt="صورة من المشروع">
-                                <img src="P1VS6.png" alt="صورة من المشروع">
-                                <img src="P1VS7.png" alt="صورة من المشروع">
-                                <img src="P1VS8.png" alt="صورة من المشروع">
-                                <img src="P1VS9.png" alt="صورة من المشروع">
-                                <img src="P1VS10.png" alt="صورة من المشروع">
-                                <img src="P1VS11.png" alt="صورة من المشروع">
-                                <img src="P1VS12.png" alt="صورة من المشروع">
-                                <img src="P1VS13.png" alt="صورة من المشروع">
-                                <img src="P1VS14.png" alt="صورة من المشروع">
-                                <img src="P1VS15.png" alt="صورة من المشروع">
-                                <img src="P1VS16.png" alt="صورة من المشروع">
-                                <img src="P1VS17.png" alt="صورة من المشروع">
-                                <img src="P1VS18.png" alt="صورة من المشروع">
-                                <img src="P1VS19.png" alt="صورة من المشروع">
-                                <img src="P1VS20.png" alt="صورة من المشروع">
-                                <img src="P1VS21.png" alt="صورة من المشروع">
-                                <img src="P1VS22.png" alt="صورة من المشروع">
-                            </div>
-                        </div>
-                    </div>
+    
+            <div class="projects">
+                <div class="project" onclick="showProject('project1')"><img src="P1L.png" alt="مشروع GYAITR"></div>
+                <div class="project" onclick="showProject('project2')"><img src="P2L.png" alt="مشروع البازار الرقمي الشامل"></div>
+                <div class="project3"><img src="P3L.png" alt="مشروع موقعي الشخصي"></div>
+                <div class="project" onclick="showProject('project4')"><img src="https://private-user-images.githubusercontent.com/111729973/327958907-04251ba4-c9a6-49ff-baea-5047d320d09b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTUyNzU3MzMsIm5iZiI6MTcxNTI3NTQzMywicGF0aCI6Ii8xMTE3Mjk5NzMvMzI3OTU4OTA3LTA0MjUxYmE0LWM5YTYtNDlmZi1iYWVhLTUwNDdkMzIwZDA5Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNTA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDUwOVQxNzIzNTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04ODlhMWZlY2I2YzQ5OWFiYmU0NjhjODRlZTgzNzljM2Q3ZTdmYjQ3ZGY1ZGJhZTgwMTY3NzEzMzUwYzlhMjRkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.d1gea2yXVH4sQckMAIi8Arsm8fbuh8KDe7kTosAph3o" alt="مشروع TS-OSINT"></div>
+            </div>
+            
+            <div id="project1" class="show-project">
+                <div class="project-content">
+                    <img src="P1V1.png" alt="مشروع GYAITR" width="100%">
+                    <h1><span>نظام</span> GYAITR</h1>
+                    <p>نظام ذكاء اصطناعي يستخدم للتعامل مع الصور والفيديوهات، يُستخدم بالوحدة الطرفية (Terminal)، مُبرمج بلغة البرمجة <img src="https://cdn.picpng.com/logo/language-logo-python-44976.png" alt="شعار Python">.</p>
+                    <br><a href="https://github.com/tlersa/GYAITR" target="_blank">عرض المشروع <i class="fa-solid fa-link"></i></a>
+                    <i class="close-project" onclick="closeProject('project1')"><i class="fa-solid fa-xmark"></i></i>
+                </div>
+            </div>
+            <div id="project2" class="show-project">
+                <div class="project-content">
+                    <iframe src="../Albazar alraqamiu alshaamil.html" width="100%" height="375px"></iframe>
+                    <h1><span>موقع إلكتروني</span> - متجر البازار الرقمي الشامل</h1>
+                    <p>• موقع لمتجر إلكتروني مثل أمازون، اسمه مستوحى من فكرته بحيث أن بازار = سوق وأصلها كُردي/فارسي.</p>
+<pre>• الموارد<div class="font">   - الخط : IBM Plex Sans Arabic <p class="abjadhuz">(أَبْجَدْ هَوَّزْ حُطِّي كَلَمُنْ سَعْفُصْ قُرشت ثخذ ضظغ)</p></div><div class="colors">   - الألوان :  <div class="p2colors">
+            <p class="p2c1">FAFBFB#</p>
+            <p class="p2c2">#121212</p>
+            <p class="p2c3">#999</p>
+            <p class="p2c4">#787878</p>
+            <p class="p2c5">#2E635C</p>
+            <p class="p2c6">#963c00</p>
+            <p class="p2c7">#1f8fff</p>
+            <p class="p2c8">f6a355#</p>
+            <p class="p2c9">#46c389</p>
+            <p class="p2c10">FF0000#</p>
+            <p class="p2c11">#000</p>
+        </div>
+    </div>
+</pre>
+                    <i class="close-project" onclick="closeProject('project2')"><i class="fa-solid fa-xmark"></i></i>
+                </div>
+            </div>
+            <div id="project4" class="show-project">
+                <div class="project-content">
+                    <img src="https://private-user-images.githubusercontent.com/111729973/327958907-04251ba4-c9a6-49ff-baea-5047d320d09b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTUyNzU3MzMsIm5iZiI6MTcxNTI3NTQzMywicGF0aCI6Ii8xMTE3Mjk5NzMvMzI3OTU4OTA3LTA0MjUxYmE0LWM5YTYtNDlmZi1iYWVhLTUwNDdkMzIwZDA5Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNTA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDUwOVQxNzIzNTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04ODlhMWZlY2I2YzQ5OWFiYmU0NjhjODRlZTgzNzljM2Q3ZTdmYjQ3ZGY1ZGJhZTgwMTY3NzEzMzUwYzlhMjRkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.d1gea2yXVH4sQckMAIi8Arsm8fbuh8KDe7kTosAph3o" alt="مشروع TS-OSINT" width="100%"></img>
+                    <h1><span>أداة</span> - TS-OSINT (TLER AL-SHAHRANI OSINT)</h1>
+                    <p>• أداة تطبيق مفهوم الـOSINT (Open-Source Intelligence)، تُستخدم بالوحدة الطرفية (Terminal)، مُبرمجة بلغة البرمجة <img src="https://cdn.picpng.com/logo/language-logo-python-44976.png" alt="شعار Python">.</p>
+                    <br><a href="https://github.com/tlersa/TS-OSINT" target="_blank">عرض المشروع <i class="fa-solid fa-link"></i></a>
+                    <i class="close-project" onclick="closeProject('project4')"><i class="fa-solid fa-xmark"></i></i>
                 </div>
             </div>
         </div>
@@ -260,7 +240,7 @@
                             <div class="product-post">نُشِر في 2023/11/27م</div>
 
                             <div class="product-stars">
-                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -279,12 +259,12 @@
                     <img src="P1V2.png" alt="صفحة من الكتاب">
                     <h3>كتاب "دليلك الشامل لأقوى الشهادات الاحترافية التقنية والتصميمية!"</h3>
                     <div class="stars">
+                        <i class="fa-regular fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(2)</span>
+                        <span>(63)</span>
                     </div>
 
                     <p>
@@ -313,7 +293,7 @@
                     <p>
                         <span>-</span> خبرة منذ 2018
                         <br><span>-</span> حاصل على 4 شهادات احترافية معتمدة<br>
-                        <span>-</span> لدي 51 تلميذ
+                        <span>-</span> لدي 53 تلميذ
                     </p>
                </div>
             </div>
