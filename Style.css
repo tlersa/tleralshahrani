@@ -718,7 +718,8 @@ span { color: #6E82FE }
 
     .projects { grid-template-columns: auto auto auto }
 
-    .project-content { width: 700px }
+    .project-content { 
+        max-height: fit-content; width: 700px }
 
     .preview img { height: 250px }
 
