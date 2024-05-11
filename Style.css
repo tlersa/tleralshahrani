@@ -948,12 +948,12 @@ span { color: #6E82FE }
     text-shadow: 0 0 5px #000;
     margin-top: -2px }
 
-.p2colors { 
+.p2colors, .p3colors { 
     display: flex;
     flex-wrap: wrap;
     margin-right: -10px }
 
-.p2colors p {
+.p2colors p, .p3colors p {
     font-size: 17px;
     width: max-content;
     padding: 2px;
@@ -1005,6 +1005,31 @@ span { color: #6E82FE }
 .p2c11 { 
     color: #FFF;
     background-color: #000 }
+
+.p3c1 {
+    color: #000;
+    background-color: #f6f7fb;
+    box-shadow: 0px 0px 5px #000 }
+
+.p3c2 {
+    color: #FFF;
+    background-color: #000 }
+
+.p3c3 {
+    color: #FFF;
+    background-color: #333 }
+
+.p3c4 {
+    color: #FFF;
+    background-color: #AAA }
+
+.p3c5 {
+    color: #FFF;
+    background-color: #DDD }
+
+.p3c6 {
+    color: #FFF;
+    background-color: #131313 }
 
 .close-project {
     font-size: 30px;
