@@ -160,7 +160,7 @@ span { color: #6E82FE }
         transform: scale(1, 1.5) } }
 
 @media screen and (max-width: 321px) {
-    .about-me-cards, .services-cards { margin-right: -10px} 
+    .about-me-cards, .services-cards { margin-right: -10px } 
 
     .achievements { height: 50vh } }
 
@@ -330,6 +330,8 @@ span { color: #6E82FE }
     .programming-logo {
         max-width: 180px; 
         margin-top: 0; left: -80px }
+
+    .about-me { height: 150vh }
     
     .programming-logo-shadow { margin-top: 195px; margin-left: -195px }
 
@@ -408,7 +410,7 @@ span { color: #6E82FE }
 
     .products-preview-close { font-size: 35px }
 
-    .achievements { height: 35vh; width: 100% }
+    .achievements { height: 25vh; width: 100% }
 
     .achievements-card { margin-top: 25px }
 
