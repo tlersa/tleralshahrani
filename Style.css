@@ -706,7 +706,7 @@ span { color: #6E82FE }
         font-size: 20px;
         line-height: 35px }
 
-    .works { height: 100vh; width: 100% }
+    .works { width: 100% }
     
     .works-title::after, .products-title::after, .achievements-title::after, .contact-title::after {
         margin-top: 40px;
