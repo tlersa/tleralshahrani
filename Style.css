@@ -465,8 +465,6 @@ span { color: #6E82FE }
 
     .about-me-card { padding-top: 25px } 
 
-    .services { height: 60vh }
-
     .services-title::after {
         margin-top: 20px;
         height: 15px; width: 20% }
