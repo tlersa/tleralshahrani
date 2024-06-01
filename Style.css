@@ -1174,6 +1174,8 @@ span { color: #6E82FE }
     font-size: 15px;
     color: #777 }
 
+.payment-methods img { height: 52px }
+
 .products-preview-btns {
     display: flex;
     justify-content: space-between }
@@ -1285,7 +1287,7 @@ span { color: #6E82FE }
     justify-content: center;
     align-items: center }
 
-.message-container { padding: 25px }
+.message-container { padding-top: 20px }
 
 .message-form, .message-group {
     display: grid;
