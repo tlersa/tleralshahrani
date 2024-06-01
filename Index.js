@@ -35,12 +35,15 @@ document.querySelector('.nav-toggle').addEventListener('click', function() { doc
 document.querySelector('.nav-close').addEventListener('click', function() { document.body.style.overflow = 'auto' })
 document.querySelectorAll('.nav-item').forEach(function(navItem) { navItem.addEventListener('click', function() { document.body.style.overflow = 'auto' }) })
 
-// about-me, works تعديلات بصفحة
-window.addEventListener('resize', function(){
-    if(window.innerWidth < 768){
+// about-me تعديلات بصفحة
+window.addEventListener('resize', function() {
+    if(window.innerWidth < 426) {
         var section = document.querySelector('.about-me, #about-me');
-        var brTags = section.getElementsByTagName('br');
-        while(brTags.length > 0){ brTags[0].parentNode.removeChild(brTags[0]); }}});    
+        var pText = section.querySelector('.about-me-text');
+        var sentences = pText.innerHTML.split('<br>');
+        var indicesToRemove = [1, 3, 6, 8];
+        for(var i = sentences.length - 1; i>=0; i--) {
+            if(indicesToRemove.includes(i)){ sentences[i] = sentences[i].replace('<br>', ''); } } pText.innerHTML = sentences.join('<br>'); }});  
 
 // عرض وإخفاء تفاصيل المشاريع
 function showProject(id) { document.getElementById(id).style.display = 'block'; }
