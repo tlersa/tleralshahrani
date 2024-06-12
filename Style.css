@@ -256,7 +256,7 @@ span { color: #6E82FE }
         padding-top: 18px }
 
     .preview { 
-        width: 240px; max-height: 440px;
+        max-height: 440px;
         overflow-y: auto }
 
     .buy-btn { margin-left: 20px }
@@ -394,7 +394,7 @@ span { color: #6E82FE }
         padding-top: 18px }
 
     .preview { 
-        width: 240px; max-height: 440px;
+        max-height: 440px;
         overflow-y: auto }
 
     .info { flex-wrap: wrap }
@@ -503,12 +503,14 @@ span { color: #6E82FE }
     .product-stars, .product-stars2 { font-size: 10px }
 
     .preview { 
-        width: 240px; max-height: 440px;
+        max-height: 440px;
         overflow-y: auto }
 
     .info { flex-wrap: wrap }
 
     .buy-btn { margin-left: 20px }
+
+    .products-preview { align-items: center }
 
     .preview img { height: 168px }
 
@@ -589,9 +591,9 @@ span { color: #6E82FE }
         margin-top: -735px;  margin-left: -10px;
         padding-top: 18px }
 
-    .products-preview-close { font-size: 40px }
+    .products-preview { align-items: baseline }
 
-    .preview { width: 640px; max-height: 640px }
+    .products-preview-close { font-size: 40px }
 
     .contact { height: 85vh }
 
@@ -642,6 +644,8 @@ span { color: #6E82FE }
     .product-stars { margin-top: -670px }
 
     .product-stars2 { margin-top: -590px }
+
+    .products-preview { align-items: center }
 
     .preview { width: 640px }
 
@@ -725,6 +729,8 @@ span { color: #6E82FE }
 
     .project-content { 
         max-height: fit-content; width: 700px }
+
+    .products-preview { align-items: center }
 
     .preview img { height: 250px }
 
@@ -1116,7 +1122,6 @@ span { color: #6E82FE }
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); /* Safari لمتصفح */
     display: none;
-    align-items: center;
     justify-content: center } 
     
 .contact, footer { z-index: -1 }
