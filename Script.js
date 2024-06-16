@@ -5,7 +5,7 @@ const sr = ScrollReveal ({
     duration: 2500,
     delay: 400, })
 
-sr.reveal(`.nav-menu, .nav-toggle, .my-logo, .about-me-title1, .services-title, .services-note, .works-title, .works-num, .products-title, .products-num, .contact-title, .contact-url, .contact-message-title, .my-logo-footer`)
+sr.reveal(`.nav-menu, .nav-toggle, .my-logo, .about-me-title1, .services-title, .services-note, .works-title, .works-num, .products-title, .products-num, .temporary, .contact-title, .contact-url, .contact-message-title, .my-logo-footer`)
 sr.reveal(`.about-me-title2, .about-me-text, .programming-logo-shadow, .about-me-cards, .services-cards, .projects, .products-container1, .message-form, .contact-note`, {origin: 'bottom'})
 sr.reveal(`.programming-logo, .footer-left`, {origin: 'left'})
 sr.reveal(`.quote, .home-text, .home-title, .copy-right, .footer-url`, {origin: 'right'})
@@ -88,3 +88,41 @@ function sendMail() {
 
 // زر الطلوع للأعلى عند النزول بالموقع
 let up = document.querySelector(".arrow-up")
+
+// تحديد تاريخ ووقت انتهاء العرض
+// تحديد تاريخ ووقت انتهاء العرض
+// يجب تعديل التاريخ ليتوافق مع التاريخ الذي ترغب به
+const expirationDate = new Date();
+expirationDate.setHours(23, 59, 0); // تعيين الساعة إلى 11:59 مساءً
+expirationDate.setMinutes(0); // تعيين الدقائق إلى 00
+
+// إذا كان اليوم هو الأربعاء أو مر بالفعل، اضبط التاريخ للأسبوع التالي
+if (expirationDate.getDay() !== 3 || expirationDate < new Date()) {
+  expirationDate.setDate(expirationDate.getDate() + ((3 + 7 - expirationDate.getDay()) % 7));
+}
+
+// تحديث عنصر <h2> بالوقت المتبقي كل ثانية
+const countdownElement = document.querySelector('.temporary');
+
+function updateCountdown() {
+  const now = new Date();
+  const remainingTime = expirationDate - now;
+
+  // تحويل الوقت المتبقي إلى أيام، ساعات، دقائق وثواني
+  const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+  // عرض الوقت المتبقي
+  countdownElement.innerHTML = `ينتهي العرض بعد ${days}:${hours}:${minutes}:${seconds}`;
+
+  // إذا انتهى الوقت، توقف عن تحديث العنصر
+  if (remainingTime < 0) {
+    clearInterval(updateInterval);
+    countdownElement.innerHTML = 'انتهى العرض';
+  }
+}
+
+// تحديث العد التنازلي كل ثانية
+const updateInterval = setInterval(updateCountdown, 1000);
