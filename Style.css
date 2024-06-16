@@ -246,6 +246,8 @@ span { color: #6E82FE }
 
     .product-price { font-size: 15px }
 
+    del { font-size: 12px }
+
     .product-post {
         margin-top: -585px; margin-right: -20px;
         font-size: 10px }
@@ -373,7 +375,7 @@ span { color: #6E82FE }
         margin-top: 20px;
         height: 15px; width: 24% }
 
-    .products-num { font-size: 15px }
+    .products-num, .temporary { font-size: 15px }
 
     .product img { height: 170px }
 
@@ -382,6 +384,8 @@ span { color: #6E82FE }
     .product-title { font-size: 17px }
 
     .product-price { font-size: 15px }
+
+    del { font-size: 12px }
 
     .product-post { margin-top: -585px; margin-right: -20px }
 
@@ -480,7 +484,7 @@ span { color: #6E82FE }
         width: 320px; max-height: 420px;
         overflow-y: auto }
 
-    .products-num { font-size: 15px }
+    .products-num, .temporary { font-size: 15px }
 
     .product img { height: 170px }
 
@@ -489,6 +493,8 @@ span { color: #6E82FE }
     .product-title { font-size: 17px }
 
     .product-price { font-size: 15px }
+
+    del { font-size: 12px }
 
     .product-post { margin-top: -535px; margin-right: -20px; }
 
@@ -567,7 +573,7 @@ span { color: #6E82FE }
 
     .products { height: 85vh }
 
-    .products-num { font-size: 24px }
+    .products-num, .temporary { font-size: 24px }
 
     .product img { height: 210px }
 
@@ -576,6 +582,8 @@ span { color: #6E82FE }
     .product-title { font-size: 21.5px }
     
     .product-price { font-size: 22px }
+
+    del { font-size: 13px }
 
     .product-post, .product-post2 { font-size: 18px }
 
@@ -647,7 +655,7 @@ span { color: #6E82FE }
 
     .products-preview { align-items: center }
 
-    .preview { width: 640px }
+    .preview { width: 640px; max-height: none }
 
     footer { padding: 20px 220px } }
 
@@ -1095,7 +1103,7 @@ span { color: #6E82FE }
     font-weight: 600;
     color: #FFF }
 
-.products-num {
+.products-num, .temporary {
     font-weight: 600;
     color: #FFF }
      
