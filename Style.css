@@ -375,7 +375,7 @@ span { color: #6E82FE }
         margin-top: 20px;
         height: 15px; width: 24% }
 
-    .products-num, .temporary { font-size: 15px }
+    .products-num { font-size: 15px }
 
     .product img { height: 170px }
 
@@ -484,7 +484,7 @@ span { color: #6E82FE }
         width: 320px; max-height: 420px;
         overflow-y: auto }
 
-    .products-num, .temporary { font-size: 15px }
+    .products-num { font-size: 15px }
 
     .product img { height: 170px }
 
@@ -561,7 +561,7 @@ span { color: #6E82FE }
 
     .font { display: flex }
 
-    .project4 {
+    .project5 {
         width: 97%;
         margin-right: 6px }
 
@@ -573,7 +573,7 @@ span { color: #6E82FE }
 
     .products { height: 85vh }
 
-    .products-num, .temporary { font-size: 24px }
+    .products-num { font-size: 24px }
 
     .product img { height: 210px }
 
@@ -920,11 +920,11 @@ span { color: #6E82FE }
     display: grid;
     margin-top: 20px }
 
-.project, .project4 { cursor: pointer }
+.project, .project5 { cursor: pointer }
 
-.project4 { cursor: auto }
+.project5 { cursor: auto }
 
-.project img, .project4 img {
+.project img, .project5 img {
     height: 100%; width: 100%;
     object-fit: contain;
     border-radius: 10px }
@@ -1103,7 +1103,7 @@ span { color: #6E82FE }
     font-weight: 600;
     color: #FFF }
 
-.products-num, .temporary {
+.products-num {
     font-weight: 600;
     color: #FFF }
      
