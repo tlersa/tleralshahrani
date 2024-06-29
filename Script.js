@@ -27,9 +27,9 @@ window.onscroll = function() {
     else{ up.classList.remove("show") }}
 
 // منع مستخدمين الأجهزة الأصغر من 1024px من التمرير بالموقع والقائمة مفتوحة على المنتج والسماح لهم عند إغلاقها
-document.querySelector('.nav-toggle').addEventListener('click', function() { document.body.style.overflow = 'hidden' })
-document.querySelector('.nav-close').addEventListener('click', function() { document.body.style.overflow = 'auto' })
-document.querySelectorAll('.nav-item').forEach(function(navItem) { navItem.addEventListener('click', function() { document.body.style.overflow = 'auto' }) })
+document.querySelector('.nav-toggle').addEventListener('click', function() {document.body.style.overflow = 'hidden'})
+document.querySelector('.nav-close').addEventListener('click', function() {document.body.style.overflow = 'auto' })
+document.querySelectorAll('.nav-item').forEach(function(navItem) { navItem.addEventListener('click', function() { document.body.style.overflow = 'auto'})})
 
 // about-me تعديلات بصفحة
 window.addEventListener('resize', function() {
@@ -77,10 +77,9 @@ function sendMail() {
         user_message : document.getElementById('user_message').value }
 
     emailjs.send('service_moipf4h', 'template_cf7lhx9', parmas).then(function(res) {
-        alert("تم إرسال الرسالة بنجاح ✅ " + res.status) },
+        alert("تم إرسال الرسالة بنجاح ✅ " + res.status)},
 
-        function(error) {
-            alert("لم يتم إرسال الرسالة بنجاح (خطأ خدمة) ❌", error) } ) }
+        function(error) {alert("لم يتم إرسال الرسالة (خطأ خدمة) ❌", error)})}
 
 // زر الطلوع للأعلى عند النزول بالموقع
 let up = document.querySelector(".arrow-up")
