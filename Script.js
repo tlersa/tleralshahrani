@@ -1,11 +1,7 @@
 // ScrollReveal تأثير
-const sr = ScrollReveal ({
-    origin: 'top',
-    distance: '60px',
-    duration: 2500,
-    delay: 400, })
+const sr = ScrollReveal({distance: '60px', duration: 1500})
 
-sr.reveal(`.nav-menu, .nav-toggle, .my-logo, .about-me-title1, .services-title, .services-note, .works-title, .works-num, .products-title, .products-num, .contact-title, .contact-url, .contact-message-title, .my-logo-footer`)
+sr.reveal(`.about-me-title1, .services-title, .services-note, .works-title, .works-num, .products-title, .products-num, .contact-title, .contact-url, .contact-message-title, .my-logo-footer`, {origin: 'top'})
 sr.reveal(`.about-me-title2, .about-me-text, .programming-logo-shadow, .about-me-cards, .services-cards, .projects, .products-container1, .message-form, .contact-note`, {origin: 'bottom'})
 sr.reveal(`.programming-logo, .footer-left`, {origin: 'left'})
 sr.reveal(`.quote, .home-text, .home-title, .copy-right, .footer-url`, {origin: 'right'})
