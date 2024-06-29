@@ -1,4 +1,4 @@
-// ScrollReveal تأثير
+\// ScrollReveal تأثير
 const sr = ScrollReveal({distance: '60px', duration: 1500})
 
 sr.reveal(`.about-me-title1, .services-title, .services-note, .works-title, .works-num, .products-title, .products-num, .contact-title, .contact-url, .contact-message-title, .my-logo-footer`, {origin: 'top'})
