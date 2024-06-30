@@ -80,6 +80,17 @@
                 <br>(2027م) بهدف تقديم محتوى عربي تقني مميز والارتقاء به.
                 <br><br>حاصل على 7 شهادات احترافية؛ شهادة دورة Py, C++, HTML, CSS, Jv, SQL من منصة 
                 <br>هرمش؛ تخصص الأمن السيبراني من إدراك، لدي 54 طالب.</p>
+            
+            <script>
+                window.addEventListener('resize', function() {
+                    if(window.innerWidth < 426) {
+                        var section = document.querySelector('.about-me, #about-me');
+                        var pText = section.querySelector('.about-me-text');
+                        var sentences = pText.innerHTML.split('<br>');
+                        var indicesToRemove = [1, 3, 6, 8];
+                        for(var i=sentences.length-1; i>=0; i--) {
+                            if(indicesToRemove.includes(i)){sentences[i] = sentences[i].replace('<br>', '');}} pText.innerHTML = sentences.join('<br>');}});
+            </script>
 
             <div class="about-me-cards">
                 <div class="about-me-card">
