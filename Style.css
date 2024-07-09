@@ -3,7 +3,7 @@
 * {
     margin: 0; padding: 0;
     position: sticky;
-    font-family: 'IBM Plex Sans Arabic', sans-serif }
+    font-family: 'IBM Plex Sans Arabic', sans-serif; }
 
 body { background-color: #15181f }
 
@@ -39,8 +39,7 @@ span { color: #1569c7 }
     transform: scaleX(0);
     background: #1569c7;
     transform-origin: right;
-    transition: transform 0.3s ease;
-    float: right }
+    transition: transform 0.3s ease }
 
 .nav-menu a:hover:before {
     transform: scaleY(1);
@@ -65,6 +64,7 @@ span { color: #1569c7 }
         margin-right: 15px;
         display: flex;
         flex-direction: column;
+        align-items: flex-end;
         row-gap: 38px }}
 
     body { z-index: 1 }
@@ -1217,7 +1217,7 @@ footer { background-color: #1e222b }
 
     .about-me-text { font-size: 20px }
 
-    .about-me-title1::after {width: 9% }
+    .about-me-title1::after { width: 9% }
 
     .services-title::after { width: 15% }
 
