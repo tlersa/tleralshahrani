@@ -5,9 +5,11 @@
     position: sticky;
     font-family: 'IBM Plex Sans Arabic', sans-serif }
 
-.home {
-    height: 100vh; width: 100%;
-    background: linear-gradient(to right bottom, #1569c7, #000) }
+body { background-color: #15181f }
+
+span { color: #1569c7 }
+
+.home { height: 100vh; width: 100% }
 
 .home-data {
     display: block;
@@ -18,9 +20,7 @@
     float: left;
     padding-top: 10px }
     
-.nav-menu {
-    display: flex;
-    overflow: hidden }
+.nav-menu { display: flex }
 
 .nav-menu a {
     padding: 10px;
@@ -37,15 +37,16 @@
     margin-top: 30px;
     border-radius: 25px;
     transform: scaleX(0);
-    background: #6E82FE;
+    background: #1569c7;
     transform-origin: right;
-    transition: transform 0.3s ease }
+    transition: transform 0.3s ease;
+    float: right }
 
 .nav-menu a:hover:before {
     transform: scaleY(1);
     transform-origin: left }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1439px) {
     .nav-menu {
         position: fixed;
         top: 0; right: -100%;
@@ -64,7 +65,7 @@
         margin-right: 15px;
         display: flex;
         flex-direction: column;
-        row-gap: 38px } }
+        row-gap: 38px }}
 
     body { z-index: 1 }
 
@@ -79,7 +80,7 @@
     margin-top: 30px;
     border-radius: 25px;
     transform: scaleX(0);
-    background: #6E82FE;
+    background: #1569c7;
     transform-origin: right;
     transition: transform 0.3s ease;
     z-index: -1 }
@@ -94,7 +95,7 @@
     color: #FFF;
     cursor: pointer }
 
-.nav-close:active, .nav-toggle:active { transform: scale(0.85) }
+.nav-close i:active, .nav-toggle i:active { transform: scale(0.85) }
 
 .nav-close {
     position: absolute;
@@ -104,19 +105,12 @@
     color: #FFF;
     cursor: pointer }
 
-@media screen and (min-width: 1440px) {
-    .nav-list { margin-right: -10px }
-
-    .nav-toggle, .nav-close { display: none } }
-
 .show-menu { right: 0 }
 
 .home-title {
     font-weight: 700;
     float: right;
     color: #FFF }
-    
-span { color: #6E82FE }
 
 .home-text {
     font-size: 20px;
@@ -134,646 +128,7 @@ span { color: #6E82FE }
     max-width: 350px;
     left: 80px;
     float: left;
-    margin-top: -110px;
-    z-index: -1;
-    animation: programming-logo-float 2s infinite alternate }
-
-.programming-logo-shadow {
-    width: 235px; height: 32px;
-    background-color: hsla(38, 69%, 8%, .2);
-    float: left;
-    border-radius: 50%;
-    filter: blur(7px);
-    animation: programming-logo-shadow 2s infinite alternate }
-    
-@keyframes programming-logo-float {
-    0% {
-        transform: translateY(0) }
-    100% {
-        transform: translateY(15px) } }
-    
-@keyframes programming-logo-shadow {
-    0% {
-        transform: scale(1, 1) }
-    100% {
-        transform: scale(1, 1.5) } }
-
-@media screen and (max-width: 321px) {
-    .about-me-cards, .services-cards { margin-right: -10px } }
-
-@media screen and (max-width: 376px) {
-    .home-data, .about-me-data, .services-data, .works-data, .products-data, .contact-data { padding: 20px }
-
-    footer { padding: 10px }
-
-    .my-logo {
-        margin-top: -20px;
-        max-width: 80px }
-
-    .home-title {
-        font-size: 25px; 
-        margin-top: 55px }
-
-    .about-me-title1, .services-title, .works-title, .products-title, .contact-title { font-size: 25px }
-
-    .about-me-title1::after {
-        margin-top: 20px;
-        height: 15px; width: 13% }
-
-    .home-text {
-        display: block;
-        font-size: 20px;
-        margin-top: 190px }
-
-    .quote { 
-        font-size: 18px;
-        margin-top: 25px }
-
-    .programming-logo {
-        max-width: 180px; 
-        margin-top: 0; left: -80px }
-    
-    .programming-logo-shadow { margin-top: 195px; margin-left: -195px }
-    
-    .about-me-text { 
-        font-size: 16px;
-        line-height: 26px }
-
-    .about-me-cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        column-gap: 30px;
-        row-gap: 25px;
-        padding: 40px 0 60px }
-
-    .about-me-card h2 span { font-size: 20px }
-
-    .about-me-card h2 span::after { height: 5px; width: 0 }
-
-    .services-title::after {
-        margin-top: 20px;
-        height: 15px; width: 26% }
-
-    .services-note { font-size: 16px }
-
-    .services-cards {
-        padding-top: 25px;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) }
-
-    .services-card-content { padding: 5px }
-
-    .services-card-content h2 { font-size: 20px }
-
-    .services-card-content pre { 
-        font-size: 13.5px;
-        line-height: 25px }
-    
-    .works-title::after, .contact-title::after {
-        margin-top: 20px;
-        height: 15px; width: 22% }
-
-    .products-title::after {
-        margin-top: 20px;
-        height: 15px; width: 26% }
-
-    .product img { height: 170px }
-
-    .products-container1 { padding: 30px 32px }
-
-    .product-title { font-size: 17px }
-
-    .product-price { font-size: 15px }
-
-    del { font-size: 12px }
-
-    .product-post {
-        margin-top: -585px; margin-right: -20px;
-        font-size: 10px }
-
-    .product-stars {
-        font-size: 10px;
-        margin-top: -602px; margin-left: -20px;
-        padding-top: 18px }
-
-    .preview { 
-        max-height: 440px;
-        overflow-y: auto }
-
-    .buy-btn { margin-left: 20px }
-
-    .preview img { height: 168px }
-
-    .products-preview-close { font-size: 35px }
-
-    .contact-message-title { font-size: 14px }
-
-    .my-logo-footer img { max-width: 40px }
-
-    .my-logo-footer h2, .footer-left h1 { font-size: 20px }
-
-    .footer-links a { 
-        font-size: 30px;
-        padding: 3px }
-
-    .footer-links a img { width: 35px }
-
-    .footer-links .Threads img { width: 30px }
-
-    .footer-left, .copy-right { padding-top: 20px }
-
-    .footer-left a { 
-        font-size: 15px;
-        line-height: 25px }
-   
-    .footer-left a::before {
-        margin-top: 15px;
-        height: 5px; width: 60% } }
-
-@media screen and (max-width: 394px) {
-    .home-data, .about-me-data, .services-data, .works-data, .products-data, .contact-data { padding: 20px }
-
-    footer { padding: 10px }
-
-    .my-logo {
-        margin-top: -20px;
-        max-width: 80px }
-
-    .home-title {
-        font-size: 25px; 
-        margin-top: 55px }
-
-    .about-me-title1, .services-title, .works-title, .products-title, .contact-title { font-size: 25px }
-
-    .about-me-title1::after {
-        margin-top: 20px;
-        height: 15px; width: 13% }
-
-    .home-text {
-        display: block;
-        font-size: 20px;
-        margin-top: 190px }
-
-    .quote { 
-        font-size: 18px;
-        margin-top: 25px }
-
-    .programming-logo {
-        max-width: 180px; 
-        margin-top: 0; left: -80px }
-    
-    .programming-logo-shadow { margin-top: 195px; margin-left: -195px }
-    
-    .about-me-text { 
-        font-size: 16px;
-        line-height: 26px }
-
-    .about-me-title2 { font-size: 18px }
-
-    .about-me-cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        column-gap: 30px;
-        row-gap: 25px;
-        padding: 40px 0 60px }
-
-    .about-me-card h2 span { font-size: 20px }
-
-    .about-me-card h2 span::after { height: 5px; width: 0 }
-
-    .services-title::after {
-        margin-top: 20px;
-        height: 15px; width: 23% }
-
-    .services-note { font-size: 16px }
-
-    .services-cards {
-        padding-top: 25px;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) }
-
-    .services-card-content { padding: 5px }
-
-    .services-card-content h2 { font-size: 20px }
-
-    .services-card-content pre { 
-        font-size: 13.5px;
-        line-height: 25px }
-    
-    .works-title::after, .contact-title::after {
-        margin-top: 20px;
-        height: 15px; width: 21% }
-
-    .works-num { font-size: 15px }
-
-    .project-content { 
-        width: 260px; max-height: 420px;
-        overflow-y: auto }
-
-    .products-title::after {
-        margin-top: 20px;
-        height: 15px; width: 24% }
-
-    .products-num { font-size: 15px }
-
-    .product img { height: 170px }
-
-    .products-container1 { padding: 30px 32px }
-
-    .product-title { font-size: 17px }
-
-    .product-price { font-size: 15px }
-
-    del { font-size: 12px }
-
-    .product-post { margin-top: -585px; margin-right: -20px }
-
-    .product-post2, .product-stars2 { margin-top: -540px }
-    
-    .product-post, .product-post2, .product-stars, .product-stars2 { font-size: 10px }
-
-    .product-stars {
-        margin-top: -602px; margin-left: -20px;
-        padding-top: 18px }
-
-    .preview { 
-        max-height: 440px;
-        overflow-y: auto }
-
-    .info { flex-wrap: wrap }
-
-    .buy-btn { margin-left: 20px }
-
-    .preview img { height: 168px }
-
-    .products-preview-close { font-size: 35px }
-
-    .contact-message-title { font-size: 14px }
-
-    .my-logo-footer img { max-width: 40px }
-
-    .my-logo-footer h2, .footer-left h1 { font-size: 20px }
-
-    .footer-links a { 
-        font-size: 30px;
-        padding: 3px }
-
-    .footer-links a img { width: 35px }
-
-    .footer-links .Threads img { width: 30px }
-
-    .footer-left, .copy-right { padding-top: 20px }
-
-    .footer-left a { 
-        font-size: 15px;
-        line-height: 25px }
-   
-    .footer-left a::before {
-        margin-top: 15px;
-        height: 5px; width: 60% } }
-
-@media screen and (min-width: 411px) {
-    .home-data, .about-me-data, .services-data, .works-data, .products-data, .contact-data { padding: 20px }
-
-    footer { padding: 10px }
-
-    .home-title {
-        font-size: 25px;
-        margin-top: 55px }
-
-    .quote { font-size: 18px }
-
-    .programming-logo { 
-        max-width: 180px;
-        margin-top: 0; left: -80px }
-
-    .about-me-title1, .services-title, .works-title, .contact-title itle { font-size: 25px }
-
-    .about-me-title1::after {
-        margin-top: 20px;
-        height: 15px; width: 11% }
-
-    .about-me-card h2 span::after { height: 5px; width: 0 }
-
-    .my-logo-footer img { max-width: 50px }
-
-    .about-me-title2 { font-size: 18px }
-
-    .about-me-cards { padding: 0 }
-
-    .about-me-card { padding-top: 25px } 
-
-    .services-title::after {
-        margin-top: 20px;
-        height: 15px; width: 20% }
-
-    .services-note { font-size: 16px }
-
-    .services-cards { padding-top: 25px }
-
-    .services-card-content { padding: 10px }
-
-    .works-title::after, .products-title::after, .contact-title::after {
-        margin-top: 20px;
-        height: 15px; width: 18% }
-
-    .works-num { font-size: 15px }
-
-    .project-content {
-        width: 320px; max-height: 420px;
-        overflow-y: auto }
-
-    .products-num { font-size: 15px }
-
-    .product img { height: 170px }
-
-    .products-container1 { padding: 30px 32px }
-
-    .product-title { font-size: 17px }
-
-    .product-price { font-size: 15px }
-
-    del { font-size: 12px }
-
-    .product-post { margin-top: -535px; margin-right: -20px; }
-
-    .product-post, .product-post2 { font-size: 12px }
-    
-    .product-post2, .product-stars2 { margin-top: -490px }
-
-    .product-stars { 
-        margin-top: -555px; margin-left: -20px;
-        padding-top: 18px }
-
-    .product-stars, .product-stars2 { font-size: 10px }
-
-    .preview { 
-        max-height: 440px;
-        overflow-y: auto }
-
-    .info { flex-wrap: wrap }
-
-    .buy-btn { margin-left: 20px }
-
-    .products-preview { align-items: center }
-
-    .preview img { height: 168px }
-
-    .products-preview-close { font-size: 35px }
-
-    .footer-links a { 
-        font-size: 30px;
-        padding: 3px }
-
-    .footer-links a img { width: 35px }
-
-    .footer-links .Threads img { width: 30px }
-
-    .footer-left h1 { font-size: 20px } }
-
-@media screen and (min-width: 767px) {
-    .home-data, .about-me-data, .services-data, .works-data, .products-data, .contact-data { padding: 40px }
-
-    .home-title {
-        font-size: 30px;
-        margin-top: 120px }
-
-    .programming-logo { max-width: 250px }
-
-    .programming-logo-shadow { margin-top: 260px; margin-left: -240px }
-
-    .about-me-title1, .services-title, .works-title, .products-title, .contact-title { font-size: 35px }
-
-    .about-me-title2 { font-size: 22px }
-
-    .about-me-text { font-size: 20px }
-
-    .about-me-title1::after {width: 9% }
-
-    .services { height: 65vh }
-
-    .services-title::after { width: 15% }
-
-    .works-title::after, .products-title::after, .contact-title::after { width: 14.5% }
-
-    .works-num { font-size: 24px }
-
-    .font { display: flex }
-
-    .project5 {
-        width: 97%;
-        margin-right: 6px }
-
-    .projects { grid-template-columns: auto auto }
-
-    .project { margin: 5px }
-
-    .project-content { width: 500px; max-height: 350px }
-
-    .products { height: 85vh }
-
-    .products-num { font-size: 24px }
-
-    .product img { height: 210px }
-
-    .products-container1 { padding: 48px 32px }
-
-    .product-title { font-size: 21.5px }
-    
-    .product-price { font-size: 22px }
-
-    del { font-size: 13px }
-
-    .product-post, .product-post2 { font-size: 18px }
-
-    .product-post { margin-top: -720px; margin-right: -10px }
-
-    .product-post2 { margin-top: -590px }
-
-    .product-post2, .product-stars2 { margin-top: -650px }
-
-    .product-stars, .product-stars2 { font-size: 15px }
-
-    .product-stars { 
-        margin-top: -735px;  margin-left: -10px;
-        padding-top: 18px }
-
-    .products-preview { align-items: baseline }
-
-    .products-preview-close { font-size: 40px }
-
-    .contact { height: 85vh }
-
-    .my-logo-footer {
-        display: flex;
-        align-items: center }
-
-    footer { padding: 20px 120px } }
-
-@media screen and (min-width: 1023px) {
-    .programming-logo {
-        margin-top: -100px;
-        max-width: 320px }
-
-    .programming-logo-shadow { margin-top: 230px; margin-left: -280px }
-
-    .about-me-title1::after { width: 6.5% }
-
-    .about-me-cards { row-gap: 0 }
-
-    .services { height: 75vh }
-
-    .services-title::after { width: 11% }
-
-    .services-note, .services-card-content h2 { font-size: 20px }
-
-    .services-cards {
-        display: inline-grid;
-        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-        padding-right: 240px }
-
-    .services-card-content { padding: 10px }
-
-    .works-title::after, .products-title::after, .contact-title::after { width: 10.5% }
-
-    .projects { padding: 10px }
-
-    .project, .project3 { margin: 8px }
-
-    .project-content {
-        width: 700px; max-height: 400px;
-        overflow-y: auto }
-
-    .product-post { margin-top: -660px }
-
-    .product-post2 { margin-top: -590px }
-
-    .product-stars { margin-top: -670px }
-
-    .product-stars2 { margin-top: -590px }
-
-    .products-preview { align-items: center }
-
-    .preview { width: 640px; max-height: none }
-
-    footer { padding: 20px 220px } }
-
-@media screen and (min-width: 1439px) {
-    .home-data, .about-me-data, .services-data, .products-data, .contact-data { padding: 40px 80px }
-
-    footer { padding: 40px 0 }
-
-    .home-title, .about-me-title1, .services-title, .works-title, .products-title, .contact-title { font-size: 40px }
-
-    .home-title { margin-top: 100px }
-
-    .quote { font-size: 20px }
-
-    .programming-logo {
-        max-width: 350px;
-        left: 80px; margin-top: -110px }
-
-    .programming-logo-shadow {
-        margin-top: 265px;
-        margin-left: -295px }
-
-    .about-me-title1::after {
-        margin-top: 45px;
-        height: 20px; width: 5% } 
-    
-    .about-me-title2 { font-size: 23px }
-
-    .about-me-text { 
-        font-size: 21px;
-        line-height: 35px;
-        margin-top: 10px }
-    
-    .about-me-cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        column-gap: 30px;
-        row-gap: 120px;
-        padding: 40px 0 60px }
-
-    .about-me-card h2 span { font-size: 30px }
-
-    .about-me-card h2 span::after { height: 7px; width: 0 }
-
-    .about-me-card-content { height: 265px }
-
-    .services { height: 65vh }
-
-    .services-title::after, .products-title::after {
-        margin-top: 40px;
-        height: 18px; width: 8.6% }
-
-    .services-note { font-size: 25px }
-
-    .services-cards {
-        padding: 35px 0 120px;
-        display: inline-grid;
-        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-        padding-right: 140px }
-
-    .services-card-content {
-        height: 215px;
-        text-align: center;
-        padding: 10px }
-
-    .services-card-content h2 { font-size: 30px }
-
-    .services-card-content pre { 
-        font-size: 20px;
-        line-height: 35px }
-
-    .works { width: 100% }
-    
-    .works-title::after, .products-title::after, .contact-title::after {
-        margin-top: 40px;
-        height: 18px; width: 8% }
-
-    .projects { grid-template-columns: auto auto auto }
-
-    .project-content { 
-        max-height: fit-content; width: 700px }
-
-    .products-preview { align-items: center }
-
-    .preview img { height: 250px }
-
-    .contact { height: 78vh }
-    
-    .contact-message-title { font-size: 22px }
-
-    .footer-content {
-        display: grid;
-        justify-content: space-around }
-
-    .my-logo-footer img { max-width: 60px }
-
-    .my-logo-footer h2, .footer-left h1 { font-size: 30px }
-
-    .footer-links a { 
-        font-size: 45px;
-        padding: 5px }
-
-    .footer-links a img { width: 50px }
-
-    .footer-links .Threads img { width: 40px }
-
-    .footer-left a { 
-        font-size: 25px;
-        line-height: 40px }
-    
-    .footer-left a::before {
-        margin-top: 25px;
-        height: 12px; width: 95% }
-
-    .footer-url a, .copy-right p { font-size: 20px }
-
-    .copy-right { padding-top: 40px } }
-
-.about-me { background: linear-gradient(to right top, #1569c7, #000) }
+    margin-top: -110px }
 
 .about-me-data {
     display: block;
@@ -790,7 +145,7 @@ span { color: #6E82FE }
 .about-me-title1::after, .services-title::after, .works-title::after, .products-title::after, .contact-title::after {
     content: "";
     position: absolute;
-    background-color: #6E82FE;
+    background-color: #1569c7;
     border-radius: 25px;
     z-index: -1 }
 
@@ -818,7 +173,7 @@ span { color: #6E82FE }
     left: calc(50% - 50px) }
 
 .about-me-card-content {
-    background-color: #1a1a1a;
+    background-color: #1e222b;
     text-align: center;
     padding: 10px;
     border-radius: 20px;
@@ -836,7 +191,7 @@ span { color: #6E82FE }
     content: "";
     position: absolute;
     left: 50%; bottom: -7px;
-    background-color :#6E82FE;
+    background-color :#1569c7;
     transition: all 0.5s;
     border-radius: 10px }
 
@@ -848,15 +203,7 @@ span { color: #6E82FE }
     width: 40px;
     margin: 5px 10px 5px 10px }
 
-.soon {
-    font-size: 17.5px;
-    color: #FFF;
-    font-weight: 500;
-    margin-top: 10px }
-
-.services { 
-    width: 100%;
-    background: linear-gradient(to right bottom, #1569c7, #000) }
+.services { height: 100vh }
 
 .services-data {
     display: block;
@@ -870,6 +217,7 @@ span { color: #6E82FE }
 .services-cards { color: #FFF }
 
 .services-card {
+    padding-top: 25px;
     transition: transform 0.5s;
     -webkit-transition: transform 0.5s;
     -moz-transition: transform 0.5s;
@@ -884,7 +232,7 @@ span { color: #6E82FE }
     -o-transform: translateY(-20px) }
 
 .services-card-content {
-    background-color: #1a1a1a;
+    background-color: #1e222b;
     text-align: center;
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -901,11 +249,10 @@ span { color: #6E82FE }
 
 .services-card-content pre {
     font-weight: 400;
-    text-align: right }
+    text-align: right;
+    line-height: 27px }
 
 .services-card-content span { color: #FDD017 }
-
-.works { background: linear-gradient(to right top, #1569c7, #000) }
     
 .works-data {
     display: block;
@@ -917,13 +264,14 @@ span { color: #6E82FE }
 
 .projects {
     display: grid;
-    margin-top: 20px }
+    margin-top: 10px }
 
-.project, .project5 { cursor: pointer }
+.project { cursor: pointer }
 
 .project5 { cursor: auto }
 
 .project img, .project5 img {
+    border: 2px solid #FFF;
     height: 100%; width: 100%;
     object-fit: contain;
     border-radius: 10px }
@@ -1059,68 +407,68 @@ span { color: #6E82FE }
 #project2 .close-project { margin-top: -25px }
 
 .close-project:active { transform: scale(0.90) }
-
-.products { 
-    width: 100%;
-    background: linear-gradient(to right bottom, #1569c7, #000) }
-
-.products-container1 {
-    max-width: 1200px;
-    margin: 0 auto }
      
-.products-container2 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: 2rem }
+.products-container2 { display: grid }
 
-.product {
-    text-align : center;
-    padding: 24px 32px;
-    background: #1a1a1a;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.5s;
-    -webkit-transition: transform 0.5s;
-    -moz-transition: transform 0.5s;
-    -ms-transition: transform 0.5s;
-    -o-transition: transform 0.5s }
+.product { 
+    padding: 12px;
+    background: #1e222b;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px #000;
+    cursor: pointer }
 
-.product:hover {
-    transform: translateY(-20px);
-    -webkit-transform: translateY(-20px);
-    -moz-transform: translateY(-20px);
-    -ms-transform: translateY(-20px);
-    -o-transform: translateY(-20px) }
-     
+.product-pic {
+    display: flex;
+    align-content: center;
+    justify-content: center }
+
 .product-title {
-    padding: 2px 0;
+    color: #FFF;
     font-weight: 600;
-    color: #FFF }
+    line-height: 25px }
+       
+.product-text {
+    color: #FFF;
+    font-weight: 400;
+    padding-bottom: 10px }
+
+.product-footer { 
+    display: flex;
+    align-items: flex-end }
+
+.product-footer1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    border-top: 1px solid #DDD }
+
+.product-footer1 div { padding-top: 3px }
+
+.product-button i {
+    color: #FFF;
+    font-size: 17px }
+
+.product-stars { color: #FDD017 }
+
+.product-post { color: #AAA }
+       
+.product-button {
+    color: #FFF;
+    border: 1px solid #FFF;
+    display: flex;
+    padding: .3em;
+    border-radius: 50px;
+    transition: .3s ease-in-out }
+       
+.product-button:hover {
+    border: 1px solid #1569c7;
+    background-color: #1569c7 }
 
 .products-num {
     font-weight: 600;
     color: #FFF }
-     
-.product-price {
-    margin-top: 10px;
-    font-weight: 400;
-    color: #777 }
-
-.product-details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center }
-    
-.product-post, .product-post2 {
-    color: #999;
-    font-weight: 500 }
-
-.product-stars i, .product-stars2 i { color: #FDD017 }
 
 .products-preview {
     position: fixed;
@@ -1138,7 +486,7 @@ span { color: #6E82FE }
     margin: 32px;
     padding: 32px;
     text-align: center;
-    background: #1a1a1a;
+    background: #1e222b;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -1184,9 +532,7 @@ span { color: #6E82FE }
     line-height: 1.5;
     padding: 16px 0;
     font-size: 15px;
-    color: #777 }
-
-.payment-methods img { height: 52px }
+    color: #FFF }
 
 .products-preview-btns {
     display: flex;
@@ -1278,14 +624,15 @@ span { color: #6E82FE }
 @keyframes shine {
     0% { left: -100px }
     60% { left: 100% }
-    to { left: 100% } } ext {
+    to { left: 100% }} ext {
     margin-top: 20px;
     font-weight: 500;
     color: #FFF } ext span { color: #FDD017 }
 
-.contact { 
-    width: 100%;
-    background: linear-gradient(to right top, #1569c7, #000) }
+.note {
+    z-index: -1;
+    font-weight: 500;
+    color: #FFF }
 
 .contact-data {
     display: block;
@@ -1311,7 +658,7 @@ span { color: #6E82FE }
     padding: 16px 20px;
     border: none;
     border-radius: 8px;
-    background-color: #1a1a1a;
+    background-color: #1e222b;
     color: hsl(228, 8%, 95%) }
 
 .name-input::placeholder, .email-input::placeholder, .message-input::placeholder { color: hsl(228, 8%, 65%) }
@@ -1325,9 +672,9 @@ span { color: #6E82FE }
     justify-self: center;
     cursor: pointer;
     display: inline-block; 
-    background-color: #1a1a1a;
+    background-color: #1e222b;
     padding: 10px;
-    border: 1px solid #1a1a1a;
+    border: 1px solid #1e222b;
     border-radius: 8px; 
     color: #FFF;
     font-size: 18px;
@@ -1336,11 +683,11 @@ span { color: #6E82FE }
     transition: all .1s }
 
 .submit-button:active {
-    box-shadow: 0px 2px 0px #000;
+    box-shadow: 0px 4px 15px 2px rgba(0, 0, 0, 0.25);
     position: relative;
     top: 2px }
 
-footer { background-color: #1a1a1a }
+footer { background-color: #1e222b }
 
 .footer-content { 
     display: grid;
@@ -1417,7 +764,7 @@ footer { background-color: #1a1a1a }
     position: absolute;
     border-radius: 25px;
     transform: scaleX(0);
-    background: #6E82FE;
+    background: #1569c7;
     transform-origin: right;
     transition: transform 0.3s ease;
     z-index: -1 }
@@ -1447,10 +794,651 @@ footer { background-color: #1a1a1a }
 .arrow-up i {
     color: #FFF;
     font-size: 30px;
-    background-color: #6E82FE;
+    background-color: #1569c7;
     padding: 10px 10px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50% }
+    
+@media screen and (max-width: 321px) { .about-me-cards, .services-cards { margin-right: -10px }}
+
+@media screen and (max-width: 376px) {
+    .home-data, .about-me-data, .services-data, .works-data, .products-data, .contact-data { padding: 20px }
+
+    footer { padding: 10px }
+
+    .my-logo {
+        margin-top: -20px;
+        max-width: 80px }
+
+    .home-title {
+        font-size: 25px; 
+        margin-top: 55px }
+
+    .about-me-title1, .services-title, .works-title, .products-title, .contact-title { font-size: 25px }
+
+    .about-me-title1::after {
+        margin-top: 20px;
+        height: 15px; width: 13% }
+
+    .home-text {
+        display: block;
+        font-size: 20px;
+        margin-top: 190px }
+
+    .quote { 
+        font-size: 18px;
+        margin-top: 25px }
+
+    .programming-logo {
+        max-width: 180px; 
+        margin-top: 0; left: -80px }
+    
+    .about-me-text { 
+        font-size: 16px;
+        line-height: 26px }
+
+    .about-me-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        column-gap: 30px;
+        row-gap: 25px;
+        padding: 40px 0 60px }
+
+    .about-me-card h2 span { font-size: 20px }
+
+    .about-me-card h2 span::after { height: 5px; width: 0 }
+
+    .services-title::after {
+        margin-top: 20px;
+        height: 15px; width: 26% }
+
+    .services-note { font-size: 16px }
+
+    .services-cards {
+        padding-top: 25px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) }
+
+    .services-card-content { padding: 5px }
+
+    .services-card-content h2 { font-size: 20px }
+
+    .services-card-content pre { 
+        font-size: 13.5px;
+        line-height: 25px }
+    
+    .works-title::after, .contact-title::after {
+        margin-top: 20px;
+        height: 15px; width: 22% }
+    
+    .projects { grid-template-columns: auto auto }
+
+    .products-title::after {
+        margin-top: 20px;
+        height: 15px; width: 26% }
+
+    .products-container2 { 
+        grid-template-columns: auto auto;
+        column-gap: 10px; row-gap: 10px }
+
+    .product { width: 130px }
+
+    .product img { height: 115px }
+
+    .product-title { 
+        font-size: 14px;
+        padding-bottom: 5px }
+
+    .product-text {
+        font-size: 12px;
+        line-height: 15px }
+
+    .product-price { font-size: 12px }
+    
+    .product-stars i, .product-post { font-size: 12px }
+
+    .preview { 
+        max-height: 440px;
+        overflow-y: auto }
+
+    .payment-methods img { height: 30px }
+
+    .buy-btn { margin-left: 20px }
+
+    .preview img { height: 168px }
+
+    .products-preview-close { font-size: 35px }
+
+    .contact-message-title { font-size: 14px }
+
+    .my-logo-footer img { max-width: 40px }
+
+    .my-logo-footer h2, .footer-left h1 { font-size: 20px }
+
+    .footer-links a { 
+        font-size: 30px;
+        padding: 3px }
+
+    .footer-links a img { width: 35px }
+
+    .footer-links .Threads img { width: 30px }
+
+    .footer-left, .copy-right { padding-top: 20px }
+
+    .footer-left a { 
+        font-size: 15px;
+        line-height: 25px }
+   
+    .footer-left a::before {
+        margin-top: 15px;
+        height: 5px; width: 60% }}
+
+@media screen and (max-width: 394px) {
+    .home-data, .about-me-data, .services-data, .works-data, .products-data, .contact-data { padding: 20px }
+
+    footer { padding: 10px }
+
+    .my-logo {
+        margin-top: -20px;
+        max-width: 80px }
+
+    .home-title {
+        font-size: 25px; 
+        margin-top: 55px }
+
+    .about-me-title1, .services-title, .works-title, .products-title, .contact-title { font-size: 25px }
+
+    .about-me-title1::after {
+        margin-top: 20px;
+        height: 15px; width: 13% }
+
+    .home-text {
+        display: block;
+        font-size: 20px;
+        margin-top: 190px }
+
+    .quote { 
+        font-size: 18px;
+        margin-top: 25px }
+
+    .programming-logo {
+        max-width: 180px; 
+        margin-top: 0; left: -80px }
+    
+    .about-me-text { 
+        font-size: 16px;
+        line-height: 26px }
+
+    .about-me-title2 { font-size: 18px }
+
+    .about-me-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        column-gap: 30px;
+        row-gap: 25px;
+        padding: 40px 0 60px }
+
+    .about-me-card h2 span { font-size: 20px }
+
+    .about-me-card h2 span::after { height: 5px; width: 0 }
+
+    .services-title::after {
+        margin-top: 20px;
+        height: 15px; width: 23% }
+
+    .services-note { font-size: 16px }
+
+    .services-cards {
+        padding-top: 25px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) }
+
+    .services-card-content { padding: 5px }
+
+    .services-card-content h2 { font-size: 20px }
+
+    .services-card-content pre { 
+        font-size: 13.5px;
+        line-height: 25px }
+    
+    .works-title::after, .contact-title::after {
+        margin-top: 20px;
+        height: 15px; width: 21% }
+
+    .works-num { font-size: 15px }
+    
+    .projects { grid-template-columns: auto }
+
+    .project, .project5 { padding: 8px }
+
+    .project-content { 
+        width: 260px; max-height: 420px;
+        overflow-y: auto }
+
+    .products-title::after {
+        margin-top: 20px;
+        height: 15px; width: 24% }
+
+    .products-num { font-size: 15px }
+
+    .products-container1 {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px }
+
+    .products-container2 { 
+        grid-template-columns: auto auto;
+        column-gap: 10px; row-gap: 10px }
+
+    .product { width: 130px }
+
+    .product img { height: 130px }
+
+    .product-title { 
+        font-size: 14px;
+        padding-bottom: 5px }
+
+    .product-text {
+        font-size: 12px;
+        line-height: 15px }
+
+    .product-price { font-size: 12px }
+    
+    .product-stars i, .product-post { font-size: 12px }
+
+    .preview { 
+        max-height: 440px;
+        overflow-y: auto }
+
+    .info { flex-wrap: wrap }
+
+    .buy-btn { margin-left: 20px }
+
+    .preview img { height: 168px }
+
+    .payment-methods img { height: 32px }
+
+    .products-preview-close { font-size: 35px }
+
+    .note { 
+        font-size: 15px;
+        padding-top: 20px;
+        line-height: 25px }
+
+    .contact-message-title { font-size: 14px }
+
+    .my-logo-footer img { max-width: 40px }
+
+    .my-logo-footer h2, .footer-left h1 { font-size: 20px }
+
+    .footer-links a { 
+        font-size: 30px;
+        padding: 3px }
+
+    .footer-links a img { width: 35px }
+
+    .footer-links .Threads img { width: 30px }
+
+    .footer-left, .copy-right { padding-top: 20px }
+
+    .footer-left a { 
+        font-size: 15px;
+        line-height: 25px }
+   
+    .footer-left a::before {
+        margin-top: 15px;
+        height: 5px; width: 60% }}
+
+@media screen and (min-width: 394px) {
+    .home-data, .about-me-data, .services-data, .works-data, .products-data, .contact-data { padding: 20px }
+
+    footer { padding: 10px }
+
+    .home-title {
+        font-size: 25px;
+        margin-top: 55px }
+
+    .quote { font-size: 18px }
+
+    .programming-logo { 
+        max-width: 180px;
+        margin-top: 0; left: -80px }
+
+    .about-me-title1, .services-title, .works-title, .contact-title itle { font-size: 25px }
+
+    .about-me-title1::after {
+        margin-top: 20px;
+        height: 15px; width: 11% }
+
+    .about-me-card h2 span::after { height: 5px; width: 0 }
+
+    .my-logo-footer img { max-width: 50px }
+
+    .about-me-title2 { font-size: 18px }
+
+    .about-me-cards { padding: 0 }
+
+    .about-me-card { padding-top: 25px } 
+
+    .services-title::after {
+        margin-top: 20px;
+        height: 15px; width: 20% }
+
+    .services-note { font-size: 16px }
+
+    .services-cards { padding-top: 25px }
+
+    .services-card-content { padding: 10px }
+
+    .works-title::after, .products-title::after, .contact-title::after {
+        margin-top: 20px;
+        height: 15px; width: 18% }
+
+    .works-num { font-size: 15px }
+
+    .projects { grid-template-columns: auto auto }
+
+    .project, .project5 { padding: 5px }
+
+    .project-content {
+        width: 320px; max-height: 420px;
+        overflow-y: auto }
+
+    .products-num { font-size: 15px }
+
+    .products-container1 { padding-top: 20px }
+
+    .product { width: 160px }
+
+    .products-container2 { 
+        grid-template-columns: auto auto;
+        row-gap: 10px; column-gap: 10px }
+
+    .product img { height: 130px }
+
+    .product-title { 
+        font-size: 14px;
+        padding-bottom: 5px }
+
+    .product-text {
+        font-size: 12px;
+        line-height: 15px }
+
+    .product-price { font-size: 12px }
+    
+    .product-stars i, .product-post { font-size: 12px }
+
+    .preview { 
+        max-height: 440px;
+        overflow-y: auto }
+
+    .info { flex-wrap: wrap }
+
+    .buy-btn { margin-left: 20px }
+
+    .products-preview { align-items: center }
+
+    .preview img { height: 168px }
+
+    .payment-methods img { height: 38px }
+
+    .products-preview-close { font-size: 35px }
+
+    .note { 
+        font-size: 15px;
+        padding-top: 20px;
+        line-height: 25px }
+
+    .footer-links a { 
+        font-size: 30px;
+        padding: 3px }
+
+    .footer-links a img { width: 35px }
+
+    .footer-links .Threads img { width: 30px }
+
+    .footer-left h1 { font-size: 20px }}
+
+@media screen and (min-width: 767px) {
+    .home-data, .about-me-data, .services-data, .works-data, .products-data, .contact-data { padding: 40px }
+
+    .home-title {
+        font-size: 30px;
+        margin-top: 120px }
+
+    .programming-logo { max-width: 250px }
+
+    .about-me-title1, .services-title, .works-title, .products-title, .contact-title { font-size: 35px }
+
+    .about-me-title2 { font-size: 22px }
+
+    .about-me-text { font-size: 20px }
+
+    .about-me-title1::after {width: 9% }
+
+    .services-title::after { width: 15% }
+
+    .works-title::after, .products-title::after, .contact-title::after { width: 14.5% }
+
+    .works-num { font-size: 24px }
+
+    .font { display: flex }
+
+    .project, .project5 { padding: 15px }
+
+    .project5 {
+        width: 97%;
+        margin-right: 6px }
+
+    .project5 img { width: 92% }
+
+    .projects { grid-template-columns: auto auto }
+
+    .project-content { width: 500px; max-height: 450px }
+
+    .products-num { font-size: 24px }
+
+    .products-container2 { grid-template-columns: auto auto auto }
+
+    .product { width: 190px }
+
+    .product-title { 
+        font-size: 20px;
+        padding-bottom: 10px }
+
+    .product-text { line-height: 25px }
+    
+    .product-price { font-size: 17px }
+
+    .products-preview { align-items: baseline }
+
+    .payment-methods img { height: 52px }
+
+    .products-preview-close { font-size: 40px }
+
+    .note { padding-top: 30px }
+
+    .contact { height: 85vh }
+
+    .my-logo-footer {
+        display: flex;
+        align-items: center }
+
+    footer { padding: 20px 120px }}
+
+@media screen and (min-width: 1023px) {
+    .programming-logo {
+        margin-top: -100px;
+        max-width: 320px }
+
+    .about-me-title1::after { width: 6.5% }
+
+    .about-me-cards { row-gap: 0 }
+
+    .services-title::after { width: 11% }
+
+    .services-note, .services-card-content h2 { font-size: 20px }
+
+    .project, .project5, .product {
+        transition: transform 0.5s;
+        -webkit-transition: transform 0.5s;
+        -moz-transition: transform 0.5s;
+        -ms-transition: transform 0.5s;
+        -o-transition: transform 0.5s }
+    
+    .project:hover, .project5:hover, .product:hover {
+        transform: translateY(-20px);
+        -webkit-transform: translateY(-20px);
+        -moz-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        -o-transform: translateY(-20px) }
+
+    .services-card-content { padding: 10px }
+
+    .works-title::after, .products-title::after, .contact-title::after { width: 10.5% }
+
+    .project, .project5 { padding: 13px }
+
+    .project5 img { width: 95% }
+
+    .project-content {
+        width: 700px; max-height: 500px;
+        overflow-y: auto }
+
+    .products-container2 { grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto }
+
+    .products-preview { align-items: center }
+
+    .preview { width: 640px; max-height: none }
+
+    .footer-left { align-items: center }}
+
+@media screen and (min-width: 1439px) {
+    .home-data, .about-me-data, .services-data, .products-data, .contact-data { padding: 40px 80px }
+    footer { padding: 40px 0 }
+
+    .nav-list { margin-right: -10px }
+
+    .nav-toggle, .nav-close { display: none }
+
+    .home-title, .about-me-title1, .services-title, .works-title, .products-title, .contact-title { font-size: 40px }
+
+    .home-title { margin-top: 100px }
+
+    .quote { font-size: 20px }
+
+    .programming-logo {
+        max-width: 350px;
+        left: 80px; margin-top: -60px }
+
+    .about-me-title1::after {
+        margin-top: 45px;
+        height: 20px; width: 5% } 
+    
+    .about-me-title2 { font-size: 23px }
+
+    .about-me-text { 
+        font-size: 21px;
+        line-height: 35px;
+        margin-top: 10px }
+    
+    .about-me-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        column-gap: 30px;
+        row-gap: 120px;
+        padding: 40px 0 60px }
+
+    .about-me-card h2 span { font-size: 30px }
+
+    .about-me-card h2 span::after { height: 7px; width: 0 }
+
+    .about-me-card-content { height: 265px }
+
+    .services { height: 100vh }
+
+    .services-title::after, .products-title::after {
+        margin-top: 40px;
+        height: 18px; width: 8.6% }
+
+    .services-note { font-size: 25px }
+
+    .services-cards {
+        padding: 35px 0 120px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        column-gap: 30px; row-gap: 30px }
+
+    .services-card-content {
+        height: 215px;
+        text-align: center;
+        padding: 10px }
+
+    .services-card-content h2 { font-size: 30px }
+
+    .services-card-content pre { 
+        font-size: 20px;
+        line-height: 35px }
+
+    .works { width: 100% }
+    
+    .works-title::after, .products-title::after, .contact-title::after {
+        margin-top: 40px;
+        height: 18px; width: 8% }
+
+    .projects { grid-template-columns: auto auto auto }
+
+    .project, .project5 { padding: 12px }
+
+    .project5 img { width: 97% }
+
+    .project-content { max-height: fit-content; width: 700px }
+
+    .products-container1 { padding-top: 20px }
+
+    .products-container2 { grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto }
+
+    .product { width: 220px }
+
+    .products-preview { align-items: center }
+
+    .preview img { height: 250px }
+
+    .payment-methods img { height: 52px }
+
+    .note { font-size: 20px }
+
+    .contact { height: 78vh }
+    
+    .contact-message-title { font-size: 22px }
+
+    .footer-content {
+        display: grid;
+        justify-content: space-around }
+
+    .my-logo-footer img { max-width: 60px }
+
+    .my-logo-footer h2, .footer-left h1 { font-size: 30px }
+
+    .footer-links a { 
+        font-size: 45px;
+        padding: 5px }
+
+    .footer-links a img { width: 50px }
+
+    .footer-links .Threads img { width: 40px }
+
+    .footer-left a { 
+        font-size: 25px;
+        line-height: 40px }
+    
+    .footer-left a::before {
+        margin-top: 25px;
+        height: 12px; width: 95% }
+
+    .footer-url a, .copy-right p { font-size: 20px }
+
+    .copy-right { padding-top: 40px }}
