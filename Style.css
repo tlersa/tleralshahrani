@@ -882,7 +882,7 @@ footer { background-color: #1e222b }
 
     .products-container2 { 
         grid-template-columns: auto auto;
-        column-gap: 10px; row-gap: 10px }
+        row-gap: 10px }
 
     .product { width: 130px }
 
@@ -1031,7 +1031,7 @@ footer { background-color: #1e222b }
 
     .products-container2 { 
         grid-template-columns: auto auto;
-        column-gap: 10px; row-gap: 10px }
+        column-gap: 5px; row-gap: 10px }
 
     .product { width: 130px }
 
@@ -1155,7 +1155,7 @@ footer { background-color: #1e222b }
 
     .products-container2 { 
         grid-template-columns: auto auto;
-        row-gap: 10px; column-gap: 10px }
+        row-gap: 10px }
 
     .product img { height: 130px }
 
