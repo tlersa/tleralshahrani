@@ -18,23 +18,11 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">(function() { emailjs.init('NcOgm7uuJBAfggEhh'); })();</script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RE96R1XS63"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        
-        gtag('config', 'G-RE96R1XS63');
-    </script>
 </head>
 <body>
     <section class="home" id="home">
         <div class="home-data">
-            <img src="My Logo Without Bg.png" alt="شعار تلر الشهراني" class="my-logo">             
+            <img src="My Logo Without Bg.png" alt="شعار تلر الشهراني" class="my-logo" loading="eager">             
 
             <nav class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
@@ -42,8 +30,8 @@
                     <li class="nav-item"><a href="#about-me" class="nav-link">عــــــــــــــــني</a></li>
                     <li class="nav-item"><a href="#services" class="nav-link">خدمــــاتي</a></li>
                     <li class="nav-item"><a href="#works" class="nav-link">أعمـــــــالي</a></li>
-                    <li class="nav-item"><a href="#products" class="nav-link">منتجاتي</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">تــــــواصل</a></li>
+                    <li class="nav-item"><a href="#products" class="nav-link">منتجاتـي</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">تـــــواصل</a></li>
                 </ul>
 
                 <div class="nav-close" id="nav-close"><i class="fa-solid fa-xmark"></i></div>
@@ -53,19 +41,18 @@
             
             <h1 class="home-title">حياك الله&#128075;&#127997;، أنا <span>تلر </span>(محمد) <span>الشهراني البيشي.</span></h1>
 
-            <p class="home-text">خبير تقني، مبرمج مواقع الويب الكاملة Full-Stack وتطبيقات الهاتف للـiOS & Android،<br>مصمم جرافيك، صانع محتوى تقني.</p>
+            <p class="home-text">خبير تقني، مخترق أخلاقي ومختبر اختراق ومكتشف ثغرات، مبرمج مواقع إلكترونية وتطبيقات <br> الهاتف، مصمم جرافيك، صانع محتوى، مؤرخ وباحث تاريخي ونسَّاب.</p>
 
             <p class="quote"><q> نجعل التقنية تتحدث بالعربية! </q></p>
 
-            <img src="Programming Logo.png" alt="شعار برمجة ثلاثي الأبعاد" class="programming-logo">
-            <div class="programming-logo-shadow"></div>
+            <img src="Programming Logo.png" alt="شعار برمجة ثلاثي الأبعاد" class="programming-logo" loading="eager">
         </div>
     </section>
 
     <section class="about-me" id="about-me">
         <div class="about-me-data">
             <h1 class="about-me-title1">عني</h1>
-
+            
             <h2 class="about-me-title2">أنا<span> محمد آل مبارك آل محمد العوسجي البجادي الشهراني البيشي</span> من مواليد عام 2009م <br>سعودي الجنسية تحديدا من ضفاف وادي بِيشة.</h2><br>
             <p class="about-me-text">خبير تقني، مخترق أخلاقي ومختبر اختراق ومكتشف ثغرات، مبرمج مواقع الويب الكاملة 
                 <br>Full-Stack وتطبيقات الهاتف للـiOS & Android باستخدام إطار عمل Flutter،
@@ -73,68 +60,53 @@
                 <br>مؤرخ وباحث تاريخي، نسَّاب [علم الأنساب] (منذ 2023م).
                 <br>وأقدم شروحات ودورات تعليمية شاملة ومختصرة ومنها المجاني المدفوع بسعر رمزي
                 <br>(2027م) بهدف تقديم محتوى عربي تقني مميز والارتقاء به.
-                <br><br>حاصل على 7 شهادات احترافية؛ شهادة دورة Py, C++, HTML, CSS, Jv, SQL من منصة 
-                <br>هرمش؛ تخصص الأمن السيبراني من إدراك، لدي 54 طالب.</p>
-            
-            <script>
-                window.addEventListener('resize', function() {
-                    if(window.innerWidth < 426) {
-                        var section = document.querySelector('.about-me, #about-me');
-                        var pText = section.querySelector('.about-me-text');
-                        var sentences = pText.innerHTML.split('<br>');
-                        var indicesToRemove = [1, 3, 6, 8];
-                        for(var i=sentences.length-1; i>=0; i--) {
-                            if(indicesToRemove.includes(i)){sentences[i] = sentences[i].replace('<br>', '');}} pText.innerHTML = sentences.join('<br>');}});
-            </script>
+                <br><br>حاصل على 7 شهادات احترافية معتمدة؛ شهادة دورة Py, C++, HTML, CSS, Jv, SQL من 
+                <br> منصة هرمش؛ تخصص الأمن السيبراني من إدراك، لدي 189+ طالب.</p>
 
             <div class="about-me-cards">
                 <div class="about-me-card">
                     <div class="about-me-card-content">
                         <h2><span>لغات برمجة</span></h2>
                         <div class="small-img">
-                            <img src="https://th.bing.com/th/id/R.9591ed82caa8d20c30db96cb7298d3a9?rik=F0xN9TgbxzzQUg&pid=ImgRaw&r=0" alt="شعار Python">
-                            <img src="C.png" alt="شعار C">
-                            <img src="Cplusplus.png" alt="شعار C++">
-                            <img src="Csharp.png" alt="شعار C#">
-                            <img src="https://www.desura.com/files/images/65/65f875b0aa3b0eb635d4f76bfebca0f6.png" alt="شعار HTML">
-                            <img src="https://lenguajecss.com/assets/logo.png" alt="شعار CSS">
-                            <img src="https://techracho.bpsinc.jp/wp-content/uploads/2009/08/javascript.png" alt="شعار JavaScript">
-                            <img src="PHP.png" alt="شعار PHP">
-                            <img src="https://1.bp.blogspot.com/-KCB4dMchrbI/Xt-dPhrgffI/AAAAAAAAJZ0/-5SgXZwe2VobaqXWm4vl0-jejbnly7fcwCNcBGAsYHQ/s1600/Java.PNG" alt="شعار Java">
-                            <img src="https://umangsoftware.com/wp-content/uploads/2020/05/SQL-logo.png" alt="شعار SQL">
-                            <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/dart-programming-language-icon.png" alt="شعار Dart">
+                            <img src="https://th.bing.com/th/id/R.9591ed82caa8d20c30db96cb7298d3a9?rik=F0xN9TgbxzzQUg&pid=ImgRaw&r=0" alt="شعار Python" loading="eager">
+                            <img src="C.png" alt="شعار C" loading="eager">
+                            <img src="Cplusplus.png" alt="شعار C++" loading="eager">
+                            <img src="Csharp.png" alt="شعار C#" loading="eager">
+                            <img src="https://www.desura.com/files/images/65/65f875b0aa3b0eb635d4f76bfebca0f6.png" alt="شعار HTML" loading="eager">
+                            <img src="https://lenguajecss.com/assets/logo.png" alt="شعار CSS" loading="eager">
+                            <img src="https://techracho.bpsinc.jp/wp-content/uploads/2009/08/javascript.png" alt="شعار JavaScript" loading="eager">
+                            <img src="PHP.png" alt="شعار PHP" loading="eager">
+                            <img src="https://1.bp.blogspot.com/-KCB4dMchrbI/Xt-dPhrgffI/AAAAAAAAJZ0/-5SgXZwe2VobaqXWm4vl0-jejbnly7fcwCNcBGAsYHQ/s1600/Java.PNG" alt="شعار Java" loading="eager">
+                            <img src="https://umangsoftware.com/wp-content/uploads/2020/05/SQL-logo.png" alt="شعار SQL" loading="eager">
+                            <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/dart-programming-language-icon.png" alt="شعار Dart" loading="eager">
                         </div>
                     </div>
                 </div>
-                
                 <div class="about-me-card">
                     <div class="about-me-card-content">
                         <h2><span>أطر عمل &amp; قواعد بيانات</span></h2>
                         <div class="small-img">
-                            <img src="https://th.bing.com/th/id/R.20ed1ffaf6047de27f152124d114127c?rik=DuB8zhRxuk1%2b4Q&pid=ImgRaw&r=0" alt="شعار Flutter">
-                            <img src="https://th.bing.com/th/id/R.27330aca06318da54be0e588225eec5e?rik=3UggpvT7KVfISw&pid=ImgRaw&r=0" alt="شعار nodejs">
-                            <img src="https://th.bing.com/th/id/R.bab2c760c60f17191cb3a002e08a3dbf?rik=zJoEjAb2we9vbQ&pid=ImgRaw&r=0" alt="شعار MySQL">
+                            <img src="https://th.bing.com/th/id/R.20ed1ffaf6047de27f152124d114127c?rik=DuB8zhRxuk1%2b4Q&pid=ImgRaw&r=0" alt="شعار Flutter" loading="eager">
+                            <img src="https://th.bing.com/th/id/R.27330aca06318da54be0e588225eec5e?rik=3UggpvT7KVfISw&pid=ImgRaw&r=0" alt="شعار nodejs" loading="eager">
+                            <img src="https://th.bing.com/th/id/R.bab2c760c60f17191cb3a002e08a3dbf?rik=zJoEjAb2we9vbQ&pid=ImgRaw&r=0" alt="شعار MySQL" loading="eager">
                         </div>
                     </div>
                 </div>
-
                 <div class="about-me-card">
                     <div class="about-me-card-content">
                         <h2><span>خبرات التصميم</span></h2>
                         <div class="small-img">
-                            <img src="https://logodownload.org/wp-content/uploads/2019/10/adobe-photoshop-logo.png" alt="شعار Photoshop">
-                            <img src="https://logodownload.org/wp-content/uploads/2017/04/adobe-Illustrator-logo-1-1.png" alt="شعار Illustrator">
-                            <p class="soon">قريبا بإذن الله...</p>
+                            <img src="https://logodownload.org/wp-content/uploads/2019/10/adobe-photoshop-logo.png" alt="شعار Photoshop" loading="eager">
+                            <img src="https://logodownload.org/wp-content/uploads/2017/04/adobe-Illustrator-logo-1-1.png" alt="شعار Illustrator" loading="eager">
                         </div>
                     </div>
                 </div>
-
                 <div class="about-me-card"> 
                     <div class="about-me-card-content">
                         <h2><span>خبرات أخرى</span></h2>
                         <div class="small-img">
-                            <img src="Github.png" alt="شعار Github">
-                            <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3253808/git-icon-icon-md.png" alt="شعار Git">
+                            <img src="Github.png" alt="شعار Github" loading="eager">
+                            <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3253808/git-icon-icon-md.png" alt="شعار Git" loading="eager">
                         </div> 
                     </div>
                 </div>
@@ -155,18 +127,24 @@
 <span>•</span> برمجة حسب طلب العميل.
 <span>•</span> إنشاء أو تطوير المواقع الإلكترونية حسب طلب العميل.
 <span>•</span> إنشاء أو تطوير تطبيقات الهاتف لنظامي الـiOS &amp; Android
-باستخدام إطار عمل Flutter حسب طلب العميل.</pre>
+   باستخدام إطار عمل Flutter حسب طلب العميل.</pre>
                     </div>
                 </div>
-            </div>
-
-            <div class="services-cards">
                 <div class="services-card">
                     <div class="services-card-content">
                         <h2>التصميم</h2>
                         <pre>
 <span>•</span> تصميم الشعارات بأنواعها المختلفة.
-<span>•</span> تصميم القوالب للمشاريع.
+<span>•</span> تصميم قوالب التصميم.
+                        </pre>
+                    </div>
+                </div>
+                <div class="services-card">
+                    <div class="services-card-content">
+                        <h2>التاريخ & علم الأنساب</h2>
+                        <pre>
+<span>•</span> البحث عن التاريخ والأنساب بالكامل للأسر العربية.                            
+<span>•</span> إنشاء مشجرات للأسر والقبائل العربية.
                         </pre>
                     </div>
                 </div>
@@ -181,20 +159,20 @@
             <h2 class="works-num">عدد الأعمال : 8</h2>
     
             <div class="projects">
-                <div class="project" onclick="showProject('project1')"><img src="P1L.png" alt="مشروع نموذج تسجيل دخول & تسجيل جديد"></div>
-                <div class="project" onclick="showProject('project2')"><img src="P2L.png" alt="مشروع أداة EncodeIt"></div>
-                <div class="project" onclick="showProject('project3')"><img src="P3L.png" alt="مشروع GYAITR"></div>
-                <div class="project" onclick="showProject('project4')"><img src="P4L.png" alt="مشروع البازار الرقمي الشامل"></div>
-                <div class="project5"><img src="P5L.png" alt="مشروع موقعي الشخصي"></div>
-                <div class="project" onclick="showProject('project6')"><img src="P6L.png" alt="مشروع أداة TS-OSINT"></div>
-                <div class="project" onclick="showProject('project7')"><img src="P7L.png" alt="مشروع أداة DAK-TS"></div>
-                <div class="project" onclick="showProject('project8')"><img src="P8L.png" alt="مشروع أداة Hrack"></div>
+                <div class="project" onclick="showProject('project1')"><img src="P1L.png" alt="مشروع نموذج تسجيل دخول & تسجيل جديد" loading="eager"></div>
+                <div class="project" onclick="showProject('project2')"><img src="P2L.png" alt="مشروع أداة EncodeIt" loading="eager"></div>
+                <div class="project" onclick="showProject('project3')"><img src="P3L.png" alt="مشروع GYAITR" loading="eager"></div>
+                <div class="project" onclick="showProject('project4')"><img src="P4L.png" alt="مشروع البازار الرقمي الشامل" loading="eager"></div>
+                <div class="project5"><img src="P5L.png" alt="مشروع موقعي الشخصي" loading="eager"></div>
+                <div class="project" onclick="showProject('project6')"><img src="P6L.png" alt="مشروع أداة TS-OSINT" loading="eager"></div>
+                <div class="project" onclick="showProject('project7')"><img src="P7L.png" alt="مشروع أداة DAK-TS" loading="eager"></div>
+                <div class="project" onclick="showProject('project8')"><img src="P8L.png" alt="مشروع أداة Hrack" loading="eager"></div>
                 
             </div>
             
             <div id="project1" class="show-project">
                 <div class="project-content">
-                    <img src="P1L.png" alt="مشروع TS-OSINT" width="100%"></img>
+                    <img src="P1L.png" alt="مشروع TS-OSINT" width="100%" loading="eager"></img>
                     <h1><span>نموذج</span> - تسجيل دخول & تسجيل جديد</h1>
 <pre>• الموارد<div class="font">   - الخط : IBM Plex Sans Arabic <pre class="abjadhuz">(أَبْجَدْ هَوَّزْ حُطِّي كَلَمُنْ سَعْفُصْ قُرشت ثخذ ضظغ)</pre></div><div class="colors">   - الألوان :  <div class="p1colors">
             <p class="p1c1">f6f7fb#</p>
@@ -211,25 +189,25 @@
             </div>
             <div id="project2" class="show-project">
                 <div class="project-content">
-                    <img src="P2L.png" alt="مشروع أداة EncodeIt" width="100%"></img>
+                    <img src="P2L.png" alt="مشروع أداة EncodeIt" width="100%" loading="eager"></img>
                     <h1><span>أداة</span> - EncodeIt</h1>
-                    <p>• أداة ترميز (مشابه للتشفير) & فك تشفير ملفات، مُبرمجة بلغة البرمجة <img src="https://cdn.picpng.com/logo/language-logo-python-44976.png" alt="شعار Python">.</p>
+                    <p>• أداة ترميز (مشابه للتشفير) & فك تشفير ملفات، مُبرمجة بلغة البرمجة <img src="https://th.bing.com/th/id/R.9591ed82caa8d20c30db96cb7298d3a9?rik=F0xN9TgbxzzQUg&pid=ImgRaw&r=0" alt="شعار Python">.</p>
                     <br><a href="https://github.com/tlersa/EncodeIt" target="_blank">عرض المشروع <i class="fa-solid fa-link"></i></a>
                     <i class="close-project" onclick="closeProject('project2')"><i class="fa-solid fa-xmark"></i></i>
                 </div>
             </div>
             <div id="project3" class="show-project">
                 <div class="project-content">
-                    <img src="P3V1.png" alt="مشروع GYAITR" width="100%">
+                    <img src="P3V1.png" alt="مشروع GYAITR" width="100%" loading="eager">
                     <h1><span>نظام</span> GYAITR</h1>
-                    <p>نظام ذكاء اصطناعي يستخدم للتعامل مع الصور والفيديوهات، يُستخدم بالوحدة الطرفية (Terminal)، مُبرمج بلغة البرمجة <img src="https://cdn.picpng.com/logo/language-logo-python-44976.png" alt="شعار Python">.</p>
+                    <p>نظام ذكاء اصطناعي يستخدم للتعامل مع الصور والفيديوهات، يُستخدم بالوحدة الطرفية (Terminal)، مُبرمج بلغة البرمجة <img src="https://th.bing.com/th/id/R.9591ed82caa8d20c30db96cb7298d3a9?rik=F0xN9TgbxzzQUg&pid=ImgRaw&r=0" alt="شعار Python">.</p>
                     <br><a href="https://github.com/tlersa/GYAITR" target="_blank">عرض المشروع <i class="fa-solid fa-link"></i></a>
                     <i class="close-project" onclick="closeProject('project3')"><i class="fa-solid fa-xmark"></i></i>
                 </div>
             </div>
             <div id="project4" class="show-project">
                 <div class="project-content">
-                    <iframe src="https://tlersa.github.io/al-brs/Index.html" width="100%" height="375px"></iframe>
+                    <iframe src="https://tlersa.github.io/al-brs/Index.html" width="100%" height="375px" loading="eager"></iframe>
                     <h1><span>موقع إلكتروني</span> - متجر البازار الرقمي الشامل</h1>
                     <p>• موقع لمتجر إلكتروني مثل أمازون، اسمه مستوحى من فكرته بحيث أن بازار = سوق وأصلها كُردي/فارسي.</p>
 <pre>• الموارد<div class="font">   - الخط : IBM Plex Sans Arabic <pre class="abjadhuz">(أَبْجَدْ هَوَّزْ حُطِّي كَلَمُنْ سَعْفُصْ قُرشت ثخذ ضظغ)</pre></div><div class="colors">   - الألوان :  <div class="p3colors">
@@ -252,27 +230,27 @@
             </div>
             <div id="project6" class="show-project">
                 <div class="project-content">
-                    <img src="P6L.png" alt="مشروع أداة TS-OSINT" width="100%"></img>
+                    <img src="P6L.png" alt="مشروع أداة TS-OSINT" width="100%" loading="eager"></img>
                     <h1><span>أداة</span> - TS-OSINT (TLER AL-SHAHRANI OSINT)</h1>
-                    <p>• أداة تطبيق مفهوم الـOSINT (Open-Source Intelligence)، تُستخدم بالوحدة الطرفية (Terminal)، مُبرمجة بلغة البرمجة <img src="https://cdn.picpng.com/logo/language-logo-python-44976.png" alt="شعار Python">.</p>
+                    <p>• أداة تطبيق مفهوم الـOSINT (Open-Source Intelligence)، تُستخدم بالوحدة الطرفية (Terminal)، مُبرمجة بلغة البرمجة <img src="https://th.bing.com/th/id/R.9591ed82caa8d20c30db96cb7298d3a9?rik=F0xN9TgbxzzQUg&pid=ImgRaw&r=0" alt="شعار Python">.</p>
                     <br><a href="https://github.com/tlersa/TS-OSINT" target="_blank">عرض المشروع <i class="fa-solid fa-link"></i></a>
                     <i class="close-project" onclick="closeProject('project6')"><i class="fa-solid fa-xmark"></i></i>
                 </div>
             </div>
             <div id="project7" class="show-project">
                 <div class="project-content">
-                    <img src="P7L.png" alt="مشروع أداة DAK-TS" width="100%"></img>
+                    <img src="P7L.png" alt="مشروع أداة DAK-TS" width="100%" loading="eager"></img>
                     <h1><span>أداة</span> - DAK-TS (DOS/DDOS Attack-TLER AL-SHAHRANI)</h1>
-                    <p>• أداة هجمة DOS/DDOS، تُستخدم بالوحدة الطرفية (Terminal)، مُبرمجة بلغة البرمجة <img src="https://cdn.picpng.com/logo/language-logo-python-44976.png" alt="شعار Python">.</p>
+                    <p>• أداة هجمة DOS/DDOS، تُستخدم بالوحدة الطرفية (Terminal)، مُبرمجة بلغة البرمجة <img src="https://th.bing.com/th/id/R.9591ed82caa8d20c30db96cb7298d3a9?rik=F0xN9TgbxzzQUg&pid=ImgRaw&r=0" alt="شعار Python">.</p>
                     <br><a href="https://github.com/tlersa/DAK-TS" target="_blank">عرض المشروع <i class="fa-solid fa-link"></i></a>
                     <i class="close-project" onclick="closeProject('project7')"><i class="fa-solid fa-xmark"></i></i>
                 </div>
             </div>
             <div id="project8" class="show-project">
                 <div class="project-content">
-                    <img src="P8L.png" alt="مشروع أداة Hrack" width="100%"></img>
+                    <img src="P8L.png" alt="مشروع أداة Hrack" width="100%" loading="eager"></img>
                     <h1><span>أداة</span> - Hrack (Hash Crack)</h1>
-                    <p>• أداة تخمين كلمات سر شبكات الـWi-Fi وحسابات الانستا، تُستخدم بالوحدة الطرفية (Terminal)، مُبرمجة بلغة البرمجة <img src="https://cdn.picpng.com/logo/language-logo-python-44976.png" alt="شعار Python">.</p>
+                    <p>• أداة تخمين كلمات سر شبكات الـWi-Fi وحسابات الانستا، تُستخدم بالوحدة الطرفية (Terminal)، مُبرمجة بلغة البرمجة <img src="https://th.bing.com/th/id/R.9591ed82caa8d20c30db96cb7298d3a9?rik=F0xN9TgbxzzQUg&pid=ImgRaw&r=0" alt="شعار Python">.</p>
                     <br><a href="https://github.com/tlersa/Hrack" target="_blank">عرض المشروع <i class="fa-solid fa-link"></i></a>
                     <i class="close-project" onclick="closeProject('project8')"><i class="fa-solid fa-xmark"></i></i>
                 </div>
@@ -284,48 +262,89 @@
         <div class="products-data">
             <h1 class="products-title">منتجاتي</h1>
 
-            <h2 class="products-num">عدد المنتجات : 2</h2>
+            <h2 class="products-num">عدد المنتجات : 3</h2>
 
             <div class="products-container1">
                 <div class="products-container2">
                    <div class="product" data-name="p-1" id="product1">
-                        <img src="P1.png" alt="كتاب دليلك الشامل لأقوى الشهادات الاحترافية التقنية والتصميمية!">
+                        <div class="product-pic"><img src="P1.png" alt="كتاب دليلك الشامل لأقوى الشهادات الاحترافية التقنية والتصميمية!" loading="eager"></div>
 
-                        <h1 class="product-title"><span>كتاب</span> "دليلك الشامل لأقوى الشهادات الاحترافية التقنية والتصميمية!"</h1>
-
-                        <p class="product-price">0﷼/0$</p>
-                        
-                        <div class="product-details">
-                            <div class="product-post">2023/11/27م</div>
-
-                            <div class="product-stars">
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
+                        <div class="product-info">
+                            <p class="product-title"><span>كتاب</span> دليلك الشامل لأقوى الشهادات الاحترافية التقنية والتصميمية!</p>
+                            <p class="product-text">يعد هذا الكتاب دليلك الأول والأشمل للشهادات الاحترافية التقنية.</p>
                         </div>
+
+                        <div class="product-footer">
+                            <div class="product-footer1">
+                                <span class="product-price">مجاني</span>
+
+                                <div class="product-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="product-post">2023/11/27م</div>                                     
+                            </div>
+
+                            <div class="product-footer2"><div class="product-button"><i class="fa-solid fa-angles-left"></i></div></div>
+                        </div>   
                    </div>
 
-                   <div class="product" data-name="p-2">
-                        <img src="P2.png" alt="كتاب أساسيات الشبكات بالعربية" id="product2">
+                   <div class="product" data-name="p-2" id="product2">
+                        <div class="product-pic"><img src="P2.png" alt="كتاب أساسيات الشبكات بالعربية" loading="eager"></div>
 
-                        <h1 class="product-title"><span>كتاب</span> "أساسيات الشبكات بالعربية"</h1>
-
-                        <p class="product-price">37.72﷼/8.99$</p>
-                        
-                        <div class="product-details">
-                            <div class="product-post2">2024/5/31م</div>
-
-                            <div class="product-stars2">
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
+                        <div class="product-info">
+                            <p class="product-title"><span>كتاب</span> أساسيات الشبكات بالعربية - بالتفصيل المبسط (:</p>
+                            <p class="product-text">المصدر الذي سيؤسسك بالشكل الصحيح لعالم الشبكات بشرح مبسط ومُفصَّل.</p>
                         </div>
+
+                        <div class="product-footer">
+                            <div class="product-footer1">
+                                <span class="product-price">33.72﷼/8.99$</span>
+
+                                <div class="product-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="product-post">2024/5/31م</div>                                     
+                            </div>
+
+                            <div class="product-footer2"><div class="product-button"><i class="fa-solid fa-angles-left"></i></div></div>
+                        </div>   
+                   </div>
+
+                   <div class="product" data-name="p-3" id="product3">
+                        <div class="product-pic"><img src="https://fastpng.com/images/file/light-grey-blank-book-cover-0bbuxfc6jchc060y.png" alt="كتاب" loading="eager"></div>
+
+                        <div class="product-info">
+                            <p class="product-title"><span>كتاب</span></p>
+                            <p class="product-text">قريبا بإذن الله...</p>
+                        </div>
+
+                        <div class="product-footer">
+                            <div class="product-footer1">
+                                <span class="product-price">مجاني</span>
+
+                                <div class="product-stars">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div class="product-post">2024/-/-م</div>                                     
+                            </div>
+
+                            <div class="product-footer2"><div class="product-button"><i class="fa-solid fa-angles-left"></i></div></div>
+                        </div>   
                    </div>
                 </div>
             </div>
@@ -333,9 +352,9 @@
             <div class="products-preview">
                 <div class="preview" data-target="p-1">
                     <div class="products-preview-close"><i class="fa-solid fa-xmark"></i></div>
-                    <img src="P1.png" alt="غلاف الكتاب">
-                    <img src="P1V.png" alt="صفحة من الكتاب">
-                    <img src="P1V2.png" alt="صفحة من الكتاب">
+                    <img src="P1.png" alt="غلاف الكتاب" loading="eager">
+                    <img src="P1V.png" alt="صفحة من الكتاب" loading="eager">
+                    <img src="P1V2.png" alt="صفحة من الكتاب" loading="eager">
                     <h3>كتاب "دليلك الشامل لأقوى الشهادات الاحترافية التقنية والتصميمية!"</h3>
                     <div class="info">
                         <div class="share">
@@ -356,7 +375,7 @@
                         </div>
                         <div class="price">
                             <i class="fa-solid fa-money-check-dollar"></i>
-                            <h4>0﷼/0$</h4>
+                            <h4>مجاني</h4>
                         </div>
                     </div>
                     <p>
@@ -373,9 +392,9 @@
 
                 <div class="preview" data-target="p-2">
                     <div class="products-preview-close"><i class="fa-solid fa-xmark"></i></div>
-                    <img src="P2.png" alt="غلاف الكتاب">
-                    <img src="P2V.png" alt="صفحة من الكتاب">
-                    <img src="P2V2.png" alt="صفحة من الكتاب">
+                    <img src="P2.png" alt="غلاف الكتاب" loading="eager">
+                    <img src="P2V.png" alt="صفحة من الكتاب" loading="eager">
+                    <img src="P2V2.png" alt="صفحة من الكتاب" loading="eager">
                     <h3>كتاب "أساسيات الشبكات العربية"</h3>
                     <div class="info">
                         <div class="share">
@@ -384,11 +403,11 @@
                         </div>
                         <div class="downloads">
                             <i class="fa-solid fa-file-arrow-down"></i>
-                            <h4>2 تنزيل</h4>
+                            <h4>3 تنزيل</h4>
                         </div>
                         <div class="start">
                             <i class="fa-regular fa-star"></i>
-                            <h4>4.13/5 (38)</h4>
+                            <h4>4.09/5 (39)</h4>
                         </div>
                         <div class="size">
                             <i class="fa-solid fa-file-pdf"></i>
@@ -399,16 +418,54 @@
                             <h4>37.72﷼/8.99$</h4>
                         </div>
                     </div>
-                    <p>ألَّفت هذا الكتاب الذي يتحدث عن أساسيات الشبكات.. الأساسيات التي تعتبر ثاني أهم شيء مبنية عليها التقنية من بعد الخوارزميات في يومنا هذا، وأساس الأمن السيبراني ومدخلك له بكافة مجالاته، فلن تحترف الأمن السيبراني بدون هذه الأساسيات، وفي هذا الكتب الذي دفعت عليه ياعزيزي القارئ سعر رمزي ستعرفها وستفهمها بالتفصيل بإذن الله ولا تقلق من تعقيد وتداخل الشبكات فالشرح مبسط وهذا هو مايميز الكتاب.</p>
+                    <p>ألَّفت هذا الكتاب الذي يتحدث عن أساسيات الشبكات.. الأساسيات التي تعتبر ثاني أهم شيء مبنية عليها التقنية من بعد الخوارزميات في يومنا هذا، وأساس الأمن السيبراني ومدخلك له بكافة مجالاته، فلن تحترف الأمن السيبراني بدون هذه الأساسيات، وفي هذا الكتاب الذي دفعت عليه ياعزيزي القارئ سعر رمزي ستعرفها وستفهمها بالتفصيل بإذن الله ولا تقلق من تعقيد وتداخل الشبكات فالشرح مبسط وهذا هو مايميز الكتاب.</p>
 
-                    <div class="payment-methods"><img src="Payment Methods.png" alt="طرق الدفع"></div>
+                    <div class="payment-methods"><img src="Payment Methods.png" alt="طرق الدفع" loading="eager"></div>
 
                     <div class="products-preview-btns">
                         <a href="https://payhip.com/b/QqFfK" class="buy-btn" data-name="p-2" target="_blank"><i class="fa-solid fa-circle-arrow-right"></i>اشترِ الآن</a>
-                        <a href="https://t.me/tler_sa/161" class="rating-btn" target="_blank"><i class="fa-solid fa-circle-arrow-left"></i>قيّم المنتج</a>                        
+                        <a href="https://t.me/tler_sa/161" class="rating-btn" target="_blank"><i class="fa-solid fa-circle-arrow-left"></i>قيّم المنتج</a>                   
+                    </div>
+                </div>
+
+                <div class="preview" data-target="p-3">
+                    <div class="products-preview-close"><i class="fa-solid fa-xmark"></i></div>
+                    <img src="https://fastpng.com/images/file/light-grey-blank-book-cover-0bbuxfc6jchc060y.png" alt="غلاف الكتاب" loading="eager">
+                    <h3> كتاب</h3>
+                    <div class="info">
+                        <div class="share">
+                            <i class="fa-solid fa-share"></i>
+                            <h4>2024/-/-م</h4>
+                        </div>
+                        <div class="downloads">
+                            <i class="fa-solid fa-file-arrow-down"></i>
+                            <h4>0 تنزيل</h4>
+                        </div>
+                        <div class="start">
+                            <i class="fa-regular fa-star"></i>
+                            <h4>0/5 (0)</h4>
+                        </div>
+                        <div class="size">
+                            <i class="fa-solid fa-file-pdf"></i>
+                            <h4>0ص (0MB)</h4>
+                        </div>
+                        <div class="price">
+                            <i class="fa-solid fa-money-check-dollar"></i>
+                            <h4>مجاني</h4>
+                        </div>
+                    </div>
+                    <p>قريبا بإذن الله...</p>
+
+                    <div class="payment-methods"><img src="Payment Methods.png" alt="طرق الدفع" loading="eager"></div>
+
+                    <div class="products-preview-btns">
+                        <a href="https://payhip.com/b/" class="buy-btn" data-name="p-3" target="_blank"><i class="fa-solid fa-circle-arrow-right"></i>اشترِ الآن</a>
+                        <a href="https://t.me/tler_sa/" class="rating-btn" target="_blank"><i class="fa-solid fa-circle-arrow-left"></i>قيّم المنتج</a>                        
                     </div>
                 </div>
             </div>
+
+            <h2 class="note">ملاحظة : إن كنت تريد الدفع بالتحويل البنكي الدولي/المحلي أو بتحويل بنك الراجحي أو بالعملات الرقمية فتواصل معي.</h2>
         </div>
     </section>
 
@@ -438,7 +495,7 @@
                 <div class="footer-right">
                     <div class="my-logo-footer">
                         <div>
-                            <img src="My Logo Without Bg.png" alt="شعار تلر الشهراني">
+                            <img src="My Logo Without Bg.png" alt="شعار تلر الشهراني" loading="eager">
                             <h2>تلر الشهراني | TLER AL-SHAHRANI &#128421;&#65039;</h2>
                         </div>
                     </div>
@@ -449,14 +506,14 @@
                         <a href="https://www.instagram.com/tler.sa2/" target="_blank" title="Instagram الاحتياطي"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://t.me/tlerz" target="_blank" title="Telegram حسابي"><i class="fa-brands fa-telegram"></i></a>
                         <a href="https://t.me/tler_sa" target="_blank" title="قناة الـTelagram"><i class="fa-brands fa-telegram"></i></a>
-                        <a href="https://t.me/Arab_Tech_Community" target="_blank" title="المجتمع التقني العربي | A.T.C"><img src="ATC.png" alt="المجتمع التقني العربي | A.T.C"></a>
+                        <a href="https://t.me/Arab_Tech_Community" target="_blank" title="المجتمع التقني العربي | A.T.C"><img src="ATC.png" alt="المجتمع التقني العربي | A.T.C" loading="eager"></a>
                         <a href="https://www.youtube.com/channel/UCkOWHuFHyPOJNPDx-6d0X5A" target="_blank" title="Youtube"><i class="fa-brands fa-youtube"></i></a>
                         <a href="https://github.com/tlersa" target="_blank" title="Github"><i class="fa-brands fa-github"></i></a>
                         <a href="https://www.pinterest.com/tlersa/" target="_blank" title="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
                         <a href="https://www.tiktok.com/@tler.sa" target="_blank" title="TikTok المحتوى التقني"><i class="fa-brands fa-tiktok"></i></a>
                         <a href="https://www.tiktok.com/@abu.shahran" target="_blank" title="TikTok المحتوى التاريخي"><i class="fa-brands fa-tiktok"></i></a>
                         <a href="mailto:TLERALBISHI@gmail.com" title="البريد الإلكتروني"><i class="fa-regular fa-envelope"></i></a>
-                        <a href="https://www.threads.net/@tler.sa" class="Threads" target="_blank" title="Threads"><img src="https://bayrivercolleges.ca/files/logo-threads.png" alt="Threads"></a>
+                        <a href="https://www.threads.net/@tler.sa" class="Threads" target="_blank" title="Threads"><img src="https://bayrivercolleges.ca/files/logo-threads.png" alt="Threads" loading="eager"></a>
                     </div>
                 </div>
 
@@ -471,7 +528,7 @@
                 </div>
 
                 <div class="copy-right">
-                    <p>بُرمِج بكل &#x1F90D; بيدي <span>تلر الشهراني | TLER AL-SHAHRANI &#128421;&#65039;</span>                      
+                    <p>بُرمِج بكل &#x1F90D; بواسطة <span>تلر الشهراني | TLER AL-SHAHRANI &#128421;&#65039;</span>                      
                     <br>كل الحقوق 2024&copy; محفوظة.</p>
                 </div>
             </div>
@@ -481,5 +538,17 @@
     <div class="arrow-up"><a href="#home"><i class="fa-solid fa-arrow-up"></i></a></div>
 
     <script src="Script.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">(function() { emailjs.init('NcOgm7uuJBAfggEhh'); })();</script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RE96R1XS63"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'G-RE96R1XS63');
+    </script>
 </body>
 </html>
