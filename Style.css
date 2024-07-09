@@ -27,23 +27,7 @@ span { color: #1569c7 }
     text-decoration: none;
     color: #FFF;
     font-size: 30px;
-    font-weight: 600;
-    text-shadow: 0 0 3px hsla(38, 69%, 8%, .2) }
-    
-.nav-menu a:before {
-    content: "";
-    position: absolute;
-    height: 12px; width: 77%;
-    margin-top: 30px;
-    border-radius: 25px;
-    transform: scaleX(0);
-    background: #1569c7;
-    transform-origin: right;
-    transition: transform 0.3s ease }
-
-.nav-menu a:hover:before {
-    transform: scaleY(1);
-    transform-origin: left }
+    font-weight: 600 }
 
 @media screen and (max-width: 1439px) {
     .nav-menu {
@@ -64,7 +48,6 @@ span { color: #1569c7 }
         margin-right: 15px;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
         row-gap: 38px }}
 
     body { z-index: 1 }
@@ -72,22 +55,6 @@ span { color: #1569c7 }
 .nav-list {
     list-style: none;
     display: flex }
-
-.nav-link:before {
-    content: "";
-    position: absolute;
-    height: 12px; width: 100%;
-    margin-top: 30px;
-    border-radius: 25px;
-    transform: scaleX(0);
-    background: #1569c7;
-    transform-origin: right;
-    transition: transform 0.3s ease;
-    z-index: -1 }
-    
-.nav-link:hover:before {
-    transform: scaleY(1);
-    transform-origin: left }
 
 .nav-close, .nav-toggle {
     display: flex;
@@ -805,136 +772,15 @@ footer { background-color: #1e222b }
 @media screen and (max-width: 321px) { .about-me-cards, .services-cards { margin-right: -10px }}
 
 @media screen and (max-width: 376px) {
-    .home-data, .about-me-data, .services-data, .works-data, .products-data, .contact-data { padding: 20px }
-
-    footer { padding: 10px }
-
-    .my-logo {
-        margin-top: -20px;
-        max-width: 80px }
-
-    .home-title {
-        font-size: 25px; 
-        margin-top: 55px }
-
-    .about-me-title1, .services-title, .works-title, .products-title, .contact-title { font-size: 25px }
-
-    .about-me-title1::after {
-        margin-top: 20px;
-        height: 15px; width: 13% }
-
-    .home-text {
-        display: block;
-        font-size: 20px;
-        margin-top: 190px }
-
-    .quote { 
-        font-size: 18px;
-        margin-top: 25px }
-
-    .programming-logo {
-        max-width: 180px; 
-        margin-top: 0; left: -80px }
+    .services-title::after { width: 26% }
     
-    .about-me-text { 
-        font-size: 16px;
-        line-height: 26px }
+    .works-title::after, .contact-title::after { width: 22% }
 
-    .about-me-cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        column-gap: 30px;
-        row-gap: 25px;
-        padding: 40px 0 60px }
-
-    .about-me-card h2 span { font-size: 20px }
-
-    .about-me-card h2 span::after { height: 5px; width: 0 }
-
-    .services-title::after {
-        margin-top: 20px;
-        height: 15px; width: 26% }
-
-    .services-note { font-size: 16px }
-
-    .services-cards {
-        padding-top: 25px;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) }
-
-    .services-card-content { padding: 5px }
-
-    .services-card-content h2 { font-size: 20px }
-
-    .services-card-content pre { 
-        font-size: 13.5px;
-        line-height: 25px }
-    
-    .works-title::after, .contact-title::after {
-        margin-top: 20px;
-        height: 15px; width: 22% }
-    
-    .projects { grid-template-columns: auto auto }
-
-    .products-title::after {
-        margin-top: 20px;
-        height: 15px; width: 26% }
-
-    .products-container2 { 
-        grid-template-columns: auto auto;
-        row-gap: 10px }
-
-    .product { width: 130px }
+    .products-title::after { width: 26% }
 
     .product img { height: 115px }
 
-    .product-title { 
-        font-size: 14px;
-        padding-bottom: 5px }
-
-    .product-text {
-        font-size: 12px;
-        line-height: 15px }
-
-    .product-price { font-size: 12px }
-    
-    .product-stars i, .product-post { font-size: 12px }
-
-    .preview { 
-        max-height: 440px;
-        overflow-y: auto }
-
-    .payment-methods img { height: 30px }
-
-    .buy-btn { margin-left: 20px }
-
-    .preview img { height: 168px }
-
-    .products-preview-close { font-size: 35px }
-
-    .contact-message-title { font-size: 14px }
-
-    .my-logo-footer img { max-width: 40px }
-
-    .my-logo-footer h2, .footer-left h1 { font-size: 20px }
-
-    .footer-links a { 
-        font-size: 30px;
-        padding: 3px }
-
-    .footer-links a img { width: 35px }
-
-    .footer-links .Threads img { width: 30px }
-
-    .footer-left, .copy-right { padding-top: 20px }
-
-    .footer-left a { 
-        font-size: 15px;
-        line-height: 25px }
-   
-    .footer-left a::before {
-        margin-top: 15px;
-        height: 5px; width: 60% }}
+    .payment-methods img { height: 30px }}
 
 @media screen and (max-width: 394px) {
     .home-data, .about-me-data, .services-data, .works-data, .products-data, .contact-data { padding: 20px }
@@ -1029,9 +875,9 @@ footer { background-color: #1e222b }
         justify-content: center;
         padding-top: 20px }
 
-    .products-container2 { 
+    .products-container2 {
         grid-template-columns: auto auto;
-        column-gap: 5px; row-gap: 10px }
+        column-gap: 10px; row-gap: 10px }
 
     .product { width: 130px }
 
@@ -1086,11 +932,7 @@ footer { background-color: #1e222b }
 
     .footer-left a { 
         font-size: 15px;
-        line-height: 25px }
-   
-    .footer-left a::before {
-        margin-top: 15px;
-        height: 5px; width: 60% }}
+        line-height: 25px }}
 
 @media screen and (min-width: 394px) {
     .home-data, .about-me-data, .services-data, .works-data, .products-data, .contact-data { padding: 20px }
@@ -1155,7 +997,7 @@ footer { background-color: #1e222b }
 
     .products-container2 { 
         grid-template-columns: auto auto;
-        row-gap: 10px }
+        column-gap: 10px; row-gap: 10px }
 
     .product img { height: 130px }
 
@@ -1323,6 +1165,22 @@ footer { background-color: #1e222b }
     .nav-list { margin-right: -10px }
 
     .nav-toggle, .nav-close { display: none }
+
+    .nav-menu a:before {
+        content: "";
+        position: absolute;
+        height: 12px; width: 77%;
+        z-index: -1;
+        margin-top: 30px;
+        border-radius: 25px;
+        transform: scaleX(0);
+        background: #1569c7;
+        transform-origin: right;
+        transition: transform 0.3s ease }
+    
+    .nav-menu a:hover:before {
+        transform: scaleY(1);
+        transform-origin: left }
 
     .home-title, .about-me-title1, .services-title, .works-title, .products-title, .contact-title { font-size: 40px }
 
