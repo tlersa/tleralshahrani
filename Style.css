@@ -460,6 +460,8 @@ span { color: #1569c7 }
     -o-border-radius: 20px;
     box-shadow: 0 2px 6px #000;
     position: relative }
+
+.contact, footer { z-index: -1 }
      
 .preview.active { display: inline-block }
      
