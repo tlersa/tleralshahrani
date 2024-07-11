@@ -23,11 +23,10 @@ document.querySelector('.nav-toggle').addEventListener('click', function() {docu
 document.querySelector('.nav-close').addEventListener('click', function() {document.body.style.overflow = 'auto'})
 document.querySelectorAll('.nav-item').forEach(function(navItem) {navItem.addEventListener('click', function() {document.body.style.overflow = 'auto'})})
 
-// عرض وإخفاء تفاصيل المشاريع
+// تعديلات على صفحة works
 function showProject(id) {document.getElementById(id).style.display = 'block'; }
 function closeProject(id) {document.getElementById(id).style.display = 'none'; }
 
-// منع المستخدم من التمرير بالموقع عند النقر على المشروع والسماح له عند عدم النقر
 document.querySelectorAll('.project').forEach(function(project) {project.addEventListener('click', function() {document.body.style.overflow = 'hidden'});});
 document.querySelectorAll('.close-project').forEach(function(closeProject) {closeProject.addEventListener('click', function() {document.body.style.overflow = 'auto'});});
 
