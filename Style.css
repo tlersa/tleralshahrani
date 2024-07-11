@@ -444,9 +444,8 @@ span { color: #1569c7 }
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); /* Safari لمتصفح */
     display: none;
-    justify-content: center } 
-    
-.contact, footer { z-index: -1 }
+    justify-content: center;
+    z-index: 1 } 
 
 .preview {
     display: none;
@@ -496,7 +495,7 @@ span { color: #1569c7 }
 .stars span { color: #777; }
      
 .preview p {
-    line-height: 1.5;
+    line-height: 25px;
     padding: 16px 0;
     font-size: 15px;
     color: #FFF }
@@ -896,7 +895,7 @@ footer { background-color: #1e222b }
     .product-stars i, .product-post { font-size: 12px }
 
     .preview { 
-        max-height: 440px;
+        max-height: 500px;
         overflow-y: auto }
 
     .info { flex-wrap: wrap }
@@ -1014,7 +1013,7 @@ footer { background-color: #1e222b }
     .product-stars i, .product-post { font-size: 12px }
 
     .preview { 
-        max-height: 440px;
+        max-height: 500px;
         overflow-y: auto }
 
     .info { flex-wrap: wrap }
