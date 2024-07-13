@@ -174,11 +174,6 @@ span { color: #1569c7 }
     display: block;
     text-align: right }
 
-.services-note {
-    margin-top: 20px;
-    font-weight: 600;
-    color: #FFF }
-
 .services-cards { color: #FFF }
 
 .services-card {
@@ -834,8 +829,6 @@ footer { background-color: #1e222b }
         margin-top: 20px;
         height: 15px; width: 23% }
 
-    .services-note { font-size: 16px }
-
     .services-cards {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) }
@@ -967,8 +960,6 @@ footer { background-color: #1e222b }
     .services-title::after {
         margin-top: 20px;
         height: 15px; width: 20% }
-
-    .services-note { font-size: 16px }
 
     .services-card-content { padding: 10px }
 
@@ -1121,7 +1112,7 @@ footer { background-color: #1e222b }
 
     .services-title::after { width: 11% }
 
-    .services-note, .services-card-content h2 { font-size: 20px }
+    .services-card-content h2 { font-size: 20px }
 
     .project, .project5, .product {
         transition: transform 0.5s;
@@ -1218,8 +1209,6 @@ footer { background-color: #1e222b }
     .services-title::after, .products-title::after {
         margin-top: 40px;
         height: 18px; width: 8.6% }
-
-    .services-note { font-size: 25px }
 
     .services-cards {
         display: grid;
