@@ -170,8 +170,6 @@ span { color: #1569c7 }
     width: 40px;
     margin: 5px 10px 5px 10px }
 
-.services { height: 100vh }
-
 .services-data {
     display: block;
     text-align: right }
@@ -214,7 +212,7 @@ span { color: #1569c7 }
     color: #FFF;
     font-weight: 500 }
 
-.services-card-content pre {
+.services-card-content p {
     font-weight: 400;
     text-align: right;
     line-height: 27px }
@@ -770,7 +768,7 @@ footer { background-color: #1e222b }
     -ms-border-radius: 50%;
     -o-border-radius: 50% }
     
-@media screen and (max-width: 321px) { .about-me-cards, .services-cards { margin-right: -10px }}
+@media screen and (max-width: 321px) { .about-me-cards, .services-cards { margin-right: -10px } }
 
 @media screen and (max-width: 376px) {
     .services-title::after { width: 26% }
@@ -826,7 +824,7 @@ footer { background-color: #1e222b }
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         column-gap: 30px;
         row-gap: 25px;
-        padding: 40px 0 60px }
+        padding: 25px 0px }
 
     .about-me-card h2 span { font-size: 20px }
 
@@ -839,7 +837,6 @@ footer { background-color: #1e222b }
     .services-note { font-size: 16px }
 
     .services-cards {
-        padding-top: 25px;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) }
 
@@ -847,9 +844,10 @@ footer { background-color: #1e222b }
 
     .services-card-content h2 { font-size: 20px }
 
-    .services-card-content pre { 
+    .services-card-content p { 
         font-size: 13.5px;
-        line-height: 25px }
+        line-height: 25px;
+        padding-top: 10px }
     
     .works-title::after, .contact-title::after {
         margin-top: 20px;
@@ -950,7 +948,7 @@ footer { background-color: #1e222b }
         max-width: 180px;
         margin-top: 0; left: -80px }
 
-    .about-me-title1, .services-title, .works-title, .contact-title itle { font-size: 25px }
+    .about-me-title1, .services-title, .works-title, .contact-title { font-size: 25px }
 
     .about-me-title1::after {
         margin-top: 20px;
@@ -972,9 +970,9 @@ footer { background-color: #1e222b }
 
     .services-note { font-size: 16px }
 
-    .services-cards { padding-top: 25px }
-
     .services-card-content { padding: 10px }
+
+    .services-card-content p { padding-top: 10px }
 
     .works-title::after, .products-title::after, .contact-title::after {
         margin-top: 20px;
@@ -1206,18 +1204,16 @@ footer { background-color: #1e222b }
     
     .about-me-cards {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: auto auto auto;
         column-gap: 30px;
         row-gap: 120px;
-        padding: 40px 0 60px }
+        padding: 25px 0 }
 
     .about-me-card h2 span { font-size: 30px }
 
     .about-me-card h2 span::after { height: 7px; width: 0 }
 
     .about-me-card-content { height: 265px }
-
-    .services { height: 100vh }
 
     .services-title::after, .products-title::after {
         margin-top: 40px;
@@ -1226,21 +1222,19 @@ footer { background-color: #1e222b }
     .services-note { font-size: 25px }
 
     .services-cards {
-        padding: 35px 0 120px;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
         column-gap: 30px; row-gap: 30px }
 
     .services-card-content {
-        height: 215px;
         text-align: center;
         padding: 10px }
 
     .services-card-content h2 { font-size: 30px }
 
-    .services-card-content pre { 
+    .services-card-content p { 
         font-size: 20px;
-        line-height: 35px }
+        line-height: 35px;
+        padding-top: 10px }
 
     .works { width: 100% }
     
