@@ -127,6 +127,8 @@ span { color: #1569c7 }
 
 .about-me-text, .project-content p, .preview p { text-align: justify }
 
+.about-me-text span, .services-card-content span { color: #FDD017 }
+
 .about-me-cards {
     display: grid;
     color: #FFF }
@@ -211,8 +213,6 @@ span { color: #1569c7 }
     font-weight: 400;
     text-align: right;
     line-height: 27px }
-
-.services-card-content span { color: #FDD017 }
     
 .works-data {
     display: block;
@@ -494,6 +494,8 @@ span { color: #1569c7 }
     padding: 16px 0;
     font-size: 15px;
     color: #FFF }
+
+.payment-methods { padding-bottom: 10px }
 
 .products-preview-btns {
     display: flex;
@@ -791,6 +793,8 @@ footer { background-color: #1e222b }
 
     .about-me-title1, .services-title, .works-title, .products-title, .contact-title { font-size: 25px }
 
+    .about-me-title1 { position: static }
+
     .about-me-title1::after {
         margin-top: 20px;
         height: 15px; width: 13% }
@@ -897,7 +901,7 @@ footer { background-color: #1e222b }
 
     .preview img { height: 168px }
 
-    .payment-methods img { height: 32px }
+    .payment-methods img { height: 45px }
 
     .products-preview-close { font-size: 35px }
 
@@ -942,6 +946,8 @@ footer { background-color: #1e222b }
         margin-top: 0; left: -80px }
 
     .about-me-title1, .services-title, .works-title, .contact-title { font-size: 25px }
+
+    .about-me-title1 { position: static }
 
     .about-me-title1::after {
         margin-top: 20px;
@@ -1015,7 +1021,7 @@ footer { background-color: #1e222b }
 
     .preview img { height: 168px }
 
-    .payment-methods img { height: 38px }
+    .payment-methods img { height: 55px }
 
     .products-preview-close { font-size: 35px }
 
@@ -1108,6 +1114,8 @@ footer { background-color: #1e222b }
 
     .about-me-title1::after { width: 6.5% }
 
+    .about-me-text { padding-left: 250px }
+
     .about-me-cards { row-gap: 0 }
 
     .services-title::after { width: 11% }
@@ -1191,7 +1199,8 @@ footer { background-color: #1e222b }
     .about-me-text { 
         font-size: 21px;
         line-height: 35px;
-        margin-top: 10px }
+        margin-top: 10px;
+        padding-left: 665px }
     
     .about-me-cards {
         display: grid;
